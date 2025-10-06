@@ -3,16 +3,19 @@ import React from "react";
 const Hero = () => {
   return (
     <section
-      className="relative flex flex-col justify-center items-start gap-[10px] flex-shrink-0 self-stretch h-[864px] bg-cover bg-center"
+      className="relative flex justify-center items-center h-[864px] bg-cover bg-center"
       style={{ backgroundImage: "url('/assets/images/home/HomeHero.jpg')" }}
     >
       <div className="absolute inset-0 bg-black/10"></div>
 
-      <div className="absolute left-6 md:left-40 top-1/2 -translate-y-1/2 z-10">
-        <h1 className="text-white font-[IvyPresto Headline] text-[48px] font-semibold leading-[58px] tracking-[-0.7px]">
-          Trusted Garment <br /> Manufacturer For <br />
-          <span className="text-[#FFA273]">Global Brands</span>
-        </h1>
+      <div className="relative z-10 flex justify-between items-center w-full max-w-[1300px] px-10">
+        <div className="pl-[49px]">
+          <h1 className="text-white font-[IvyPresto Headline] text-[48px] font-semibold leading-[58px] tracking-[-0.7px]">
+            Trusted Garment <br /> Manufacturer For <br />
+            <span className="text-[#FFA273]">Global Brands</span>
+          </h1>
+        </div>
+        <div className="flex-shrink-0"></div>
       </div>
 
       <div className="absolute top-1/2 -translate-y-1/2 right-0 flex flex-col justify-center items-center gap-[17.59px] w-[62px] h-[202px] bg-white shadow-md rounded-l-md">
