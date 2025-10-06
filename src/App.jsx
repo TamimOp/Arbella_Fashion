@@ -1,12 +1,16 @@
+import { BrowserRouter } from "react-router-dom";
+import Navbar from "./components/common/Navbar";
+import AppRoutes from "./routes/AppRoutes";
 import "./index.css";
 
 function App() {
   return (
-    <>
-      <div>
-        <p className="text-3xl text-red-500">Hello World</p>
-      </div>
-    </>
+    <BrowserRouter>
+      <Navbar />
+      <main>
+        <AppRoutes />
+      </main>
+    </BrowserRouter>
   );
 }
 
