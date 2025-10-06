@@ -7,7 +7,7 @@ const Factory = () => {
     <section className="w-full px-4 py-16 md:py-24 bg-[#F7FDFF]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-12">
+        <div className="text-center mb-14">
           <h2 className='text-4xl md:text-5xl lg:text-6xl font-light mb-6 font-["Playfair_Display"] text-[#293037]'>
             Our <span className="text-[#FFA273]">Factory</span>
           </h2>
@@ -29,7 +29,7 @@ const Factory = () => {
           {/* Button positioned on top right */}
           <button
             onClick={() => setIsPressed(!isPressed)}
-            className="absolute top-6 right-6 md:top-1 md:right-2 flex items-center gap-0.5 rounded-[10px] bg-black transition-all duration-200 p-0.5"
+            className="absolute top-0 right-0 md:top-1 md:right-2 flex items-center gap-0.5 rounded-[10px] bg-black transition-all duration-200 p-0.5"
           >
             {/* SVG Icon - directly on black background */}
             <div
