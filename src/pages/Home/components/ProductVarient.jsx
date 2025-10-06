@@ -1,12 +1,12 @@
 import React from "react";
 import { productVarient } from "../../../data/productsData";
 
-const ProductVariety = () => {
+const ProductVarient = () => {
   return (
     <section className="bg-[#F7FDFF] py-20 flex flex-col items-center justify-center">
       {/* heading */}
       <div className="text-center mb-25">
-        <h2 className='font-["Playfair_Display"] text-[48px] font-normal leading-[60px] tracking-[-0.7px] text-[#2C2C2C]'>
+        <h2 className='font-["Playfair_Display"] text-[48px] font-normal leading-[60px] tracking-[-0.7px] text-[#293037]'>
           Offering A <span className="text-[#FFA273]">Wide Variety</span> <br />
           of <span className="text-[#FFA273]">Product</span> Range
         </h2>
@@ -47,4 +47,4 @@ const ProductVariety = () => {
   );
 };
 
-export default ProductVariety;
+export default ProductVarient;

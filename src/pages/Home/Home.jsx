@@ -1,12 +1,14 @@
 import React from "react";
 import Hero from "./components/Hero";
-import ProductVariety from "./components/ProductVariety";
+import Factory from "./components/Factory";
+import ProductVarient from "./components/ProductVarient";
 
 const Home = () => {
   return (
     <div>
       <Hero />
-      <ProductVariety />
+      <ProductVarient />
+      <Factory />
     </div>
   );
 };
