@@ -12,7 +12,7 @@ const Factory = () => {
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="text-center mb-14">
-          <h2 className='text-4xl md:text-5xl lg:text-6xl font-light mb-6 font-["Playfair_Display"] text-[#293037]'>
+          <h2 className='text-3xl md:text-4xl lg:text-5xl font-light mb-6 font-["Playfair_Display"] text-[#293037]'>
             Our <span className="text-[#FFA273]">Factory</span>
           </h2>
           <p className="text-[#293037] text-lg md:text-xl max-w-3xl mx-auto font-[Montserrat]">
