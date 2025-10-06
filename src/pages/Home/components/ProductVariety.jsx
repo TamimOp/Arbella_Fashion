@@ -3,7 +3,7 @@ import { productVarient } from "../../../data/productsData";
 
 const ProductVariety = () => {
   return (
-    <section className="bg-[#F6FAFC] py-20 flex flex-col items-center justify-center">
+    <section className="bg-[#F6FAFC] py-20 flex flex-col items-center justify-cente max-w-[1400px] px-4">
       {/* heading */}
       <div className="text-center mb-25">
         <h2 className='font-["Playfair_Display"] text-[48px] font-normal leading-[60px] tracking-[-0.7px] text-[#2C2C2C]'>
