@@ -3,6 +3,7 @@ import Navbar from "./components/common/Navbar";
 import AppRoutes from "./routes/AppRoutes";
 import "./index.css";
 import Newsletter from "./components/common/Newsletter";
+import Footer from "./components/common/Footer";
 
 function App() {
   return (
@@ -12,6 +13,7 @@ function App() {
         <AppRoutes />
       </main>
       <Newsletter />
+      <Footer />
     </BrowserRouter>
   );
 }
