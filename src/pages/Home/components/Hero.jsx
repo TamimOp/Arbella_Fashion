@@ -8,7 +8,7 @@ const Hero = () => {
     >
       <div className="absolute inset-0 bg-black/10"></div>
 
-      <div className="absolute left-6 md:left-20 top-1/2 -translate-y-1/2 z-10">
+      <div className="absolute left-6 md:left-40 top-1/2 -translate-y-1/2 z-10">
         <h1 className="text-white font-[IvyPresto Headline] text-[48px] font-semibold leading-[58px] tracking-[-0.7px]">
           Trusted Garment <br /> Manufacturer For <br />
           <span className="text-[#FFA273]">Global Brands</span>
