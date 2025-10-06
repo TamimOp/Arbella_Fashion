@@ -23,7 +23,7 @@ const Navbar = () => {
         height: "107px",
       }}
     >
-      <div className="flex justify-between items-center w-full max-w-[1300px] px-10">
+      <div className="flex justify-between items-center w-full max-w-[1400px] px-10">
         {/* Logo */}
         <div className="flex items-center">
           <NavLink to="/">

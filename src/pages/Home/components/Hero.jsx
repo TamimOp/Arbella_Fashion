@@ -8,7 +8,7 @@ const Hero = () => {
     >
       <div className="absolute inset-0 bg-black/10"></div>
 
-      <div className="relative z-10 flex justify-between items-center w-full max-w-[1300px] px-10">
+      <div className="relative z-10 flex justify-between items-center w-full max-w-[1400px] px-10">
         <div className="pl-[49px]">
           <h1 className="text-white font-[IvyPresto Headline] text-[48px] font-semibold leading-[58px] tracking-[-0.7px]">
             Trusted Garment <br /> Manufacturer For <br />
