@@ -42,7 +42,7 @@ const Navbar = () => {
               key={index}
               to={item.path}
               className={({ isActive }) =>
-                `text-sm font-semibold tracking-wide transition-colors duration-200 ${
+                `text-sm font-semibold tracking-wide transition-colors duration-200 font-[Montserrat] ${
                   isActive
                     ? "text-[#FF6B35]" // Active link color (orange)
                     : "text-white hover:text-[#FF6B35]"
