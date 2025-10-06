@@ -1,27 +1,5 @@
 import React from "react";
-
-const products = [
-  {
-    title: "OUTERWEAR",
-    img: "/assets/images/home/outerwear.png",
-  },
-  {
-    title: "CASUAL WEAR",
-    img: "/assets/images/home/casualwear.png",
-  },
-  {
-    title: "BOTTOMS",
-    img: "/assets/images/home/bottoms.png",
-  },
-  {
-    title: "UNIFORM",
-    img: "/assets/images/home/uniform.png",
-  },
-  {
-    title: "WORKWEAR",
-    img: "/assets/images/home/workwear.png",
-  },
-];
+import { productVarient } from "../../../data/productsData";
 
 const ProductVariety = () => {
   return (
@@ -36,7 +14,7 @@ const ProductVariety = () => {
 
       {/* product images */}
       <div className="flex gap-[24px] justify-center items-end">
-        {products.map((item, index) => (
+        {productVarient.map((item, index) => (
           <div
             key={index}
             className={`relative w-[228.17px] h-[607.743px] flex-shrink-0 bg-cover bg-center rounded-sm overflow-hidden ${
