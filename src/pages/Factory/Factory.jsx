@@ -1,9 +1,10 @@
 import React from "react";
+import Hero from "./components/Hero";
 
 const Factory = () => {
   return (
     <div>
-      <h1>Factory</h1>
+      <Hero />
     </div>
   );
 };
