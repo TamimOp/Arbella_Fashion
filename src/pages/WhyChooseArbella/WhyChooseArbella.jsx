@@ -1,9 +1,12 @@
 import React from "react";
+import Hero from "./components/Hero";
+import WhyChoose from "./components/WhyChoose";
 
 const WhyChooseArbella = () => {
   return (
     <div>
-      <h1>Why Choose Arbella?</h1>
+      <Hero />
+      <WhyChoose />
     </div>
   );
 };
