@@ -2,7 +2,16 @@ import React from "react";
 
 const SupplyChain = () => {
   return (
-    <section className="bg-[#F7F7F7] py-24">
+    <section className="bg-[#F7F7F7] py-24 relative overflow-hidden">
+      {/* Top Right Background Image */}
+      <div
+        className="absolute top-0 -right-40 md:-right-50 w-[300px] h-[280px] md:w-[410px] md:h-[382px] opacity-30"
+        style={{
+          background:
+            "url('/assets/images/whyChooseArbella/yarnBeam.png') center/cover no-repeat",
+        }}
+      ></div>
+
       <div className="max-w-[1400px] mx-auto px-10 flex flex-col items-center text-center">
         {/* ---- Top Heading ---- */}
         <div className="mb-12">
