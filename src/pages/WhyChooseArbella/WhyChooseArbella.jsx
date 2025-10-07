@@ -3,6 +3,7 @@ import Hero from "./components/Hero";
 import WhyChoose from "./components/WhyChoose";
 import SupplyChain from "./components/SupplyChain";
 import Comparison from "./components/Comparison";
+import FiveReason from "./components/FiveReason";
 
 const WhyChooseArbella = () => {
   return (
@@ -11,6 +12,7 @@ const WhyChooseArbella = () => {
       <WhyChoose />
       <SupplyChain />
       <Comparison />
+      <FiveReason />
     </div>
   );
 };

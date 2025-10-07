@@ -15,7 +15,7 @@ const WhyChoose = () => {
       <div className="relative z-10 max-w-[1400px] mx-auto px-10">
         {/* Heading */}
         <div className="text-center mb-16">
-          <h2 className='font-["IvyPresto_Headline"] text-[48px] md:text-[64px] font-normal leading-[60px] tracking-[-0.7px] text-[#2C2C2C]'>
+          <h2 className='font-["IvyPresto_Headline"] text-[48px] md:text-[64px] font-normal leading-[60px] tracking-[-0.7px] text-[#2C2C2C] mb-5'>
             Why Choose <span className="text-[#FFA273]">Arbella?</span>
           </h2>
           <p className="mt-2 text-[#4B4B4B] text-[18px] md:text-[20px] leading-[28px] max-w-[760px] mx-auto">
