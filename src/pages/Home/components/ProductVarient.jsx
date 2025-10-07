@@ -1,5 +1,5 @@
 import React from "react";
-import { productVarient } from "../../../data/productsData";
+import { productVarient } from "../../../data/Data";
 
 const ProductVarient = () => {
   return (
