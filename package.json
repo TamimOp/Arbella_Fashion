@@ -11,6 +11,7 @@
   },
   "dependencies": {
     "@fontsource/playfair-display": "^5.2.8",
+    "@fontsource/plus-jakarta-sans": "^5.2.8",
     "@tailwindcss/vite": "^4.1.14",
     "clsx": "^2.1.1",
     "framer-motion": "^12.23.22",

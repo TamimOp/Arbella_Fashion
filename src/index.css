@@ -1,5 +1,6 @@
 @import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600&display=swap");
 @import "@fontsource/playfair-display";
+@import "@fontsource/plus-jakarta-sans";
 @import "tailwindcss";
 @font-face {
   font-family: "IvyPresto_Headline";
