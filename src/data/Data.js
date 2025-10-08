@@ -117,3 +117,174 @@ export const teamMembers = [
     image: "/assets/images/about/dp9.jpg",
   },
 ];
+
+export const products = {
+  outerwear: [
+    {
+      id: 1,
+      name: "Spread Collar Shirt",
+      productCode: "#4520",
+      mogCode: "12113",
+      fabCode: "18999",
+      description:
+        "A classic wardrobe essential made with comfort and durability in mind.",
+      image: "/assets/images/products/outerwear1.jpg",
+    },
+    {
+      id: 2,
+      name: "Spread Collar Shirt",
+      productCode: "#4520",
+      mogCode: "12113",
+      fabCode: "18999",
+      description:
+        "A classic wardrobe essential made with comfort and durability in mind.",
+      image: "/assets/images/products/outerwear2.png",
+    },
+    {
+      id: 3,
+      name: "Spread Collar Shirt",
+      productCode: "#4520",
+      mogCode: "12113",
+      fabCode: "18999",
+      description:
+        "A classic wardrobe essential made with comfort and durability in mind.",
+      image: "/assets/images/products/outerwear3.png",
+    },
+    {
+      id: 4,
+      name: "Spread Collar Shirt",
+      productCode: "#4520",
+      mogCode: "12113",
+      fabCode: "18999",
+      description:
+        "A classic wardrobe essential made with comfort and durability in mind.",
+      image: "/assets/images/products/outerwear4.jpg",
+    },
+  ],
+  casualwear: [
+    {
+      id: 5,
+      name: "Spread Collar Shirt",
+      productCode: "#4520",
+      mogCode: "12113",
+      fabCode: "18999",
+      description:
+        "A classic wardrobe essential made with comfort and durability in mind.",
+      image: "/assets/images/products/casualwear1.jpg",
+    },
+    {
+      id: 6,
+      name: "Spread Collar Shirt",
+      productCode: "#4520",
+      mogCode: "12113",
+      fabCode: "18999",
+      description:
+        "A classic wardrobe essential made with comfort and durability in mind.",
+      image: "/assets/images/products/casualwear2.jpg",
+    },
+    {
+      id: 7,
+      name: "Spread Collar Shirt",
+      productCode: "#4520",
+      mogCode: "12113",
+      fabCode: "18999",
+      description:
+        "A classic wardrobe essential made with comfort and durability in mind.",
+      image: "/assets/images/products/casualwear3.jpg",
+    },
+    {
+      id: 8,
+      name: "Spread Collar Shirt",
+      productCode: "#4520",
+      mogCode: "12113",
+      fabCode: "18999",
+      description:
+        "A classic wardrobe essential made with comfort and durability in mind.",
+      image: "/assets/images/products/casualwear4.jpg",
+    },
+  ],
+  bottoms: [
+    {
+      id: 9,
+      name: "Spread Collar Shirt",
+      productCode: "#4520",
+      mogCode: "12113",
+      fabCode: "18999",
+      description:
+        "A classic wardrobe essential made with comfort and durability in mind.",
+      image: "/assets/images/products/bottoms1.png",
+    },
+    {
+      id: 10,
+      name: "Spread Collar Shirt",
+      productCode: "#4520",
+      mogCode: "12113",
+      fabCode: "18999",
+      description:
+        "A classic wardrobe essential made with comfort and durability in mind.",
+      image: "/assets/images/products/bottoms2.jpg",
+    },
+    {
+      id: 11,
+      name: "Spread Collar Shirt",
+      productCode: "#4520",
+      mogCode: "12113",
+      fabCode: "18999",
+      description:
+        "A classic wardrobe essential made with comfort and durability in mind.",
+      image: "/assets/images/products/bottoms3.jpg",
+    },
+    {
+      id: 12,
+      name: "Spread Collar Shirt",
+      productCode: "#4520",
+      mogCode: "12113",
+      fabCode: "18999",
+      description:
+        "A classic wardrobe essential made with comfort and durability in mind.",
+      image: "/assets/images/products/bottoms4.jpg",
+    },
+  ],
+  uniform: [
+    {
+      id: 13,
+      name: "Spread Collar Shirt",
+      productCode: "#4520",
+      mogCode: "12113",
+      fabCode: "18999",
+      description:
+        "A classic wardrobe essential made with comfort and durability in mind.",
+      image: "/assets/images/products/uniform1.jpg",
+    },
+    {
+      id: 14,
+      name: "Spread Collar Shirt",
+      productCode: "#4520",
+      mogCode: "12113",
+      fabCode: "18999",
+      description:
+        "A classic wardrobe essential made with comfort and durability in mind.",
+      image: "/assets/images/products/uniform2.jpg",
+    },
+    {
+      id: 15,
+      name: "Spread Collar Shirt",
+      productCode: "#4520",
+      mogCode: "12113",
+      fabCode: "18999",
+      description:
+        "A classic wardrobe essential made with comfort and durability in mind.",
+      image: "/assets/images/products/uniform3.jpg",
+    },
+    {
+      id: 16,
+      name: "Spread Collar Shirt",
+      productCode: "#4520",
+      mogCode: "12113",
+      fabCode: "18999",
+      description:
+        "A classic wardrobe essential made with comfort and durability in mind.",
+      image: "/assets/images/products/uniform4.jpg",
+    },
+  ],
+};

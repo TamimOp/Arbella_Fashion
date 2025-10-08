@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { products } from "../../../data/Data";
 
 const OurProducts = () => {
   const [activeTab, setActiveTab] = useState("ALL");
@@ -11,177 +12,6 @@ const OurProducts = () => {
     "UNIFORM",
     "WORKWEAR",
   ];
-
-  const products = {
-    outerwear: [
-      {
-        id: 1,
-        name: "Spread Collar Shirt",
-        productCode: "#4520",
-        mogCode: "12113",
-        fabCode: "18999",
-        description:
-          "A classic wardrobe essential made with comfort and durability in mind.",
-        image: "/assets/images/products/outerwear1.jpg",
-      },
-      {
-        id: 2,
-        name: "Spread Collar Shirt",
-        productCode: "#4520",
-        mogCode: "12113",
-        fabCode: "18999",
-        description:
-          "A classic wardrobe essential made with comfort and durability in mind.",
-        image: "/assets/images/products/outerwear2.png",
-      },
-      {
-        id: 3,
-        name: "Spread Collar Shirt",
-        productCode: "#4520",
-        mogCode: "12113",
-        fabCode: "18999",
-        description:
-          "A classic wardrobe essential made with comfort and durability in mind.",
-        image: "/assets/images/products/outerwear3.png",
-      },
-      {
-        id: 4,
-        name: "Spread Collar Shirt",
-        productCode: "#4520",
-        mogCode: "12113",
-        fabCode: "18999",
-        description:
-          "A classic wardrobe essential made with comfort and durability in mind.",
-        image: "/assets/images/products/outerwear4.jpg",
-      },
-    ],
-    casualwear: [
-      {
-        id: 5,
-        name: "Spread Collar Shirt",
-        productCode: "#4520",
-        mogCode: "12113",
-        fabCode: "18999",
-        description:
-          "A classic wardrobe essential made with comfort and durability in mind.",
-        image: "/assets/images/products/casualwear1.jpg",
-      },
-      {
-        id: 6,
-        name: "Spread Collar Shirt",
-        productCode: "#4520",
-        mogCode: "12113",
-        fabCode: "18999",
-        description:
-          "A classic wardrobe essential made with comfort and durability in mind.",
-        image: "/assets/images/products/casualwear2.jpg",
-      },
-      {
-        id: 7,
-        name: "Spread Collar Shirt",
-        productCode: "#4520",
-        mogCode: "12113",
-        fabCode: "18999",
-        description:
-          "A classic wardrobe essential made with comfort and durability in mind.",
-        image: "/assets/images/products/casualwear3.jpg",
-      },
-      {
-        id: 8,
-        name: "Spread Collar Shirt",
-        productCode: "#4520",
-        mogCode: "12113",
-        fabCode: "18999",
-        description:
-          "A classic wardrobe essential made with comfort and durability in mind.",
-        image: "/assets/images/products/casualwear4.jpg",
-      },
-    ],
-    bottoms: [
-      {
-        id: 9,
-        name: "Spread Collar Shirt",
-        productCode: "#4520",
-        mogCode: "12113",
-        fabCode: "18999",
-        description:
-          "A classic wardrobe essential made with comfort and durability in mind.",
-        image: "/assets/images/products/bottoms1.png",
-      },
-      {
-        id: 10,
-        name: "Spread Collar Shirt",
-        productCode: "#4520",
-        mogCode: "12113",
-        fabCode: "18999",
-        description:
-          "A classic wardrobe essential made with comfort and durability in mind.",
-        image: "/assets/images/products/bottoms2.jpg",
-      },
-      {
-        id: 11,
-        name: "Spread Collar Shirt",
-        productCode: "#4520",
-        mogCode: "12113",
-        fabCode: "18999",
-        description:
-          "A classic wardrobe essential made with comfort and durability in mind.",
-        image: "/assets/images/products/bottoms3.jpg",
-      },
-      {
-        id: 12,
-        name: "Spread Collar Shirt",
-        productCode: "#4520",
-        mogCode: "12113",
-        fabCode: "18999",
-        description:
-          "A classic wardrobe essential made with comfort and durability in mind.",
-        image: "/assets/images/products/bottoms4.jpg",
-      },
-    ],
-    uniform: [
-      {
-        id: 13,
-        name: "Spread Collar Shirt",
-        productCode: "#4520",
-        mogCode: "12113",
-        fabCode: "18999",
-        description:
-          "A classic wardrobe essential made with comfort and durability in mind.",
-        image: "/assets/images/products/uniform1.jpg",
-      },
-      {
-        id: 14,
-        name: "Spread Collar Shirt",
-        productCode: "#4520",
-        mogCode: "12113",
-        fabCode: "18999",
-        description:
-          "A classic wardrobe essential made with comfort and durability in mind.",
-        image: "/assets/images/products/uniform2.jpg",
-      },
-      {
-        id: 15,
-        name: "Spread Collar Shirt",
-        productCode: "#4520",
-        mogCode: "12113",
-        fabCode: "18999",
-        description:
-          "A classic wardrobe essential made with comfort and durability in mind.",
-        image: "/assets/images/products/uniform3.jpg",
-      },
-      {
-        id: 16,
-        name: "Spread Collar Shirt",
-        productCode: "#4520",
-        mogCode: "12113",
-        fabCode: "18999",
-        description:
-          "A classic wardrobe essential made with comfort and durability in mind.",
-        image: "/assets/images/products/uniform4.jpg",
-      },
-    ],
-  };
 
   const getFilteredProducts = () => {
     if (activeTab === "ALL") {
@@ -208,7 +38,7 @@ const OurProducts = () => {
   const filteredProducts = getFilteredProducts();
 
   return (
-    <section className="w-full bg-white pt-32 md:pt-35 pb-12 md:pb-16 lg:pb-20 font-[Poppins]">
+    <section className="w-full bg-[#F7FDFF] pt-32 md:pt-35 pb-12 md:pb-16 lg:pb-20 font-[Poppins]">
       <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
         {/* Title */}
         <h2 className="text-4xl md:text-[50px] font-[playfair_display] text-center mb-8 md:mb-12">
