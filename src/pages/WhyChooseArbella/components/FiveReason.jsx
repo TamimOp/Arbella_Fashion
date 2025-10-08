@@ -94,7 +94,7 @@ const FiveReason = () => {
               </div>
             ) : (
               // Image Left, Text Right
-              <div className="flex flex-col lg:flex-row-reverse items-center lg:justify-end">
+              <div className="flex flex-col lg:flex-row-reverse items-center lg:justify-between">
                 <div className="w-full lg:w-auto lg:flex-1 lg:max-w-7xl px-8 md:px-12 lg:pl-24 xl:pl-110 mb-8 lg:mb-0">
                   <div
                     className="text-3xl md:text-4xl font-medium mb-4"

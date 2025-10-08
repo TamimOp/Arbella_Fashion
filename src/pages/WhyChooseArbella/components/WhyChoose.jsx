@@ -39,7 +39,7 @@ const WhyChoose = () => {
         </div>
 
         {/* Main Content */}
-        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-20">
+        <div className="flex flex-col lg:flex-row items-center gap-10 lg:gap-40">
           {/* Left Image */}
           <div className="w-full lg:w-[610px] h-[300px] lg:h-[553.34px] flex-shrink-0">
             <img
