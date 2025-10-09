@@ -18,7 +18,7 @@ const CommunityForEmployee = () => {
         <div className="max-w-[740px] w-full lg:pl-[120px] py-[40px]">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-[28px] max-w-[640px]">
             {/* Card 1 */}
-            <div className="rounded-[20px] bg-[#FCEFE8] px-[20px] md:px-[28px] py-[24px] md:py-[32px] flex flex-col gap-3">
+            <div className="rounded-[30px] bg-[#FFA2731C] px-[20px] md:px-[28px] py-[24px] md:py-[32px] flex flex-col gap-3">
               <img
                 src="/assets/images/community/Book.svg"
                 alt="Learning Hub"
@@ -27,14 +27,14 @@ const CommunityForEmployee = () => {
               <h3 className="text-[14px] md:text-[15px] font-semibold text-[#1E1E1E]">
                 Learning Hub
               </h3>
-              <p className="text-[12px] text-[#4B4B4B] leading-[22px] md:leading-[26px]">
+              <p className="text-[12px] text-[#000] leading-[22px] md:leading-[26px]">
                 Literacy programs, language courses, and skill-building
                 workshops.
               </p>
             </div>
 
             {/* Card 2 */}
-            <div className="rounded-[20px] bg-[#DCE0E3] px-[20px] md:px-[28px] py-[24px] md:py-[32px] flex flex-col gap-3">
+            <div className="rounded-[30px] bg-[#29303714] px-[20px] md:px-[28px] py-[24px] md:py-[32px] flex flex-col gap-3">
               <img
                 src="/assets/images/community/Health.svg"
                 alt="Health & Wellness"
@@ -43,14 +43,14 @@ const CommunityForEmployee = () => {
               <h3 className="text-[14px] md:text-[15px] font-semibold text-[#1E1E1E]">
                 Health & Wellness
               </h3>
-              <p className="text-[12px] text-[#4B4B4B] leading-[22px] md:leading-[26px]">
+              <p className="text-[12px] text-[#000] leading-[22px] md:leading-[26px]">
                 Regular health check-ups, awareness sessions, and counseling
                 support.
               </p>
             </div>
 
             {/* Card 3 */}
-            <div className="rounded-[20px] bg-[#DCE0E3] px-[20px] md:px-[28px] py-[24px] md:py-[32px] flex flex-col gap-3">
+            <div className="rounded-[30px] bg-[#29303714] px-[20px] md:px-[28px] py-[24px] md:py-[32px] flex flex-col gap-3">
               <img
                 src="/assets/images/community/Support.svg"
                 alt="Social Support"
@@ -59,13 +59,13 @@ const CommunityForEmployee = () => {
               <h3 className="text-[14px] md:text-[15px] font-semibold text-[#1E1E1E]">
                 Social Support
               </h3>
-              <p className="text-[12px] text-[#4B4B4B] leading-[22px] md:leading-[26px]">
+              <p className="text-[12px] text-[#000] leading-[22px] md:leading-[26px]">
                 Community events, peer groups, and family engagement programs.
               </p>
             </div>
 
             {/* Card 4 */}
-            <div className="rounded-[20px] bg-[#FCEFE8] px-[20px] md:px-[28px] py-[24px] md:py-[32px] flex flex-col gap-3">
+            <div className="rounded-[30px] bg-[#FFA2731C] px-[20px] md:px-[28px] py-[24px] md:py-[32px] flex flex-col gap-3">
               <img
                 src="/assets/images/community/Leadership.svg"
                 alt="Recreation"
@@ -74,7 +74,7 @@ const CommunityForEmployee = () => {
               <h3 className="text-[14px] md:text-[15px] font-semibold text-[#1E1E1E]">
                 Recreation
               </h3>
-              <p className="text-[12px] text-[#4B4B4B] leading-[22px] md:leading-[26px]">
+              <p className="text-[12px] text-[#000] leading-[22px] md:leading-[26px]">
                 Spaces for relaxation, cultural activities, and team-building
                 events.
               </p>
