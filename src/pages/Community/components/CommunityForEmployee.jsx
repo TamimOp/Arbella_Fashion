@@ -13,7 +13,7 @@ const CommunityForEmployee = () => {
       </div>
 
       {/* ---------- Main Content Section ---------- */}
-      <div className="w-full flex flex-col lg:flex-row justify-between items-stretch mt-[50px] px-4 md:px-8">
+      <div className="w-full flex flex-col lg:flex-row justify-between items-stretch mt-[50px] px-4 md:px-0">
         {/* Left Cards */}
         <div className="max-w-[740px] w-full lg:pl-[120px] py-[40px]">
           <div className="grid grid-cols-1 sm:grid-cols-2 gap-[28px] max-w-[640px]">

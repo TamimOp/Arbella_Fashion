@@ -128,7 +128,7 @@ const Excellence = () => {
 
                   <button
                     onClick={() => handlePrevious(1, sections[0].images.length)}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 flex items-center justify-center transition-colors"
+                    className="absolute left-4 top-1/2 -translate-y-1/2 flex items-center justify-center transition-colors cursor-pointer"
                     aria-label="Previous image"
                   >
                     <img
@@ -140,7 +140,7 @@ const Excellence = () => {
 
                   <button
                     onClick={() => handleNext(1, sections[0].images.length)}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center transition-colors"
+                    className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center transition-colors cursor-pointer"
                     aria-label="Next image"
                   >
                     <img
@@ -189,7 +189,7 @@ const Excellence = () => {
 
                   <button
                     onClick={() => handlePrevious(2, sections[1].images.length)}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 flex items-center justify-center transition-colors"
+                    className="absolute left-4 top-1/2 -translate-y-1/2 flex items-center justify-center transition-colors cursor-pointer"
                     aria-label="Previous image"
                   >
                     <img
@@ -201,7 +201,7 @@ const Excellence = () => {
 
                   <button
                     onClick={() => handleNext(2, sections[1].images.length)}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center transition-colors"
+                    className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center transition-colors cursor-pointer"
                     aria-label="Next image"
                   >
                     <img
@@ -250,7 +250,7 @@ const Excellence = () => {
 
                   <button
                     onClick={() => handlePrevious(3, sections[2].images.length)}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 flex items-center justify-center transition-colors"
+                    className="absolute left-4 top-1/2 -translate-y-1/2 flex items-center justify-center transition-colors cursor-pointer"
                     aria-label="Previous image"
                   >
                     <img
@@ -262,7 +262,7 @@ const Excellence = () => {
 
                   <button
                     onClick={() => handleNext(3, sections[2].images.length)}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center transition-colors"
+                    className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center transition-colors cursor-pointer"
                     aria-label="Next image"
                   >
                     <img
@@ -311,7 +311,7 @@ const Excellence = () => {
 
                   <button
                     onClick={() => handlePrevious(4, sections[3].images.length)}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 flex items-center justify-center transition-colors"
+                    className="absolute left-4 top-1/2 -translate-y-1/2 flex items-center justify-center transition-colors cursor-pointer"
                     aria-label="Previous image"
                   >
                     <img
@@ -323,7 +323,7 @@ const Excellence = () => {
 
                   <button
                     onClick={() => handleNext(4, sections[3].images.length)}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center transition-colors"
+                    className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center transition-colors cursor-pointer"
                     aria-label="Next image"
                   >
                     <img
@@ -372,7 +372,7 @@ const Excellence = () => {
 
                   <button
                     onClick={() => handlePrevious(5, sections[4].images.length)}
-                    className="absolute left-4 top-1/2 -translate-y-1/2 flex items-center justify-center transition-colors"
+                    className="absolute left-4 top-1/2 -translate-y-1/2 flex items-center justify-center transition-colors cursor-pointer"
                     aria-label="Previous image"
                   >
                     <img
@@ -384,7 +384,7 @@ const Excellence = () => {
 
                   <button
                     onClick={() => handleNext(5, sections[4].images.length)}
-                    className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center transition-colors"
+                    className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center transition-colors cursor-pointer"
                     aria-label="Next image"
                   >
                     <img

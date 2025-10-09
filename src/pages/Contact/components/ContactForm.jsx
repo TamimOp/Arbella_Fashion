@@ -50,7 +50,7 @@ const ContactForm = () => {
           </div>
 
           {/* Contact Info Section */}
-          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-start gap-[20px] sm:gap-[30px] mt-[40px] md:mt-[80px]">
+          <div className="flex flex-col sm:flex-row items-start sm:items-center justify-start gap-[20px] sm:gap-[60px] mt-[40px] md:mt-[80px]">
             <div className="flex items-center gap-3">
               <img
                 src="/assets/icons/contactPhone.svg"
