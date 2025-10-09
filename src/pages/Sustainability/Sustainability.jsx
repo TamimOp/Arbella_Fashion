@@ -1,9 +1,10 @@
 import React from "react";
+import Hero from "./components/Hero";
 
 const Sustainability = () => {
   return (
     <div>
-      <h1>Sustainability</h1>
+      <Hero />
     </div>
   );
 };
