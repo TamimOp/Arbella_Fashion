@@ -1,9 +1,10 @@
 import React from "react";
+import Hero from "./components/Hero";
 
 const Community = () => {
   return (
     <div>
-      <h1>Community</h1>
+      <Hero />
     </div>
   );
 };
