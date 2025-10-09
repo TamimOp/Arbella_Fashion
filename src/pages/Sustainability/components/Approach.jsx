@@ -83,9 +83,25 @@ const Approach = () => {
           className="mb-16 md:mb-20 lg:mb-24"
           style={{ borderTop: "1px solid #000" }}
         >
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
-            {/* Left - Text */}
-            <div className="w-full lg:w-1/2 mt-1.5">
+          <div className="flex flex-col-reverse lg:flex-row gap-8 lg:gap-12">
+            {/* Left - Image */}
+            <div className="w-full lg:w-1/2 flex justify-start">
+              <div
+                style={{
+                  width: "585px",
+                  maxWidth: "100%",
+                  height: "473px",
+                  backgroundImage:
+                    "url('/assets/images/sustainability/plant.png')",
+                  backgroundSize: "cover",
+                  backgroundPosition: "center",
+                  backgroundRepeat: "no-repeat",
+                }}
+              />
+            </div>
+
+            {/* Right - Text */}
+            <div className="w-full lg:w-1/2 mt-1.5 lg:pl-14">
               <h3 className="text-3xl md:text-[32px] font-[IvyPresto_Headline] text-[#000] mb-6">
                 Planting Tree's
               </h3>
@@ -106,22 +122,6 @@ const Approach = () => {
                   className="h-16 md:h-20"
                 />
               </div>
-            </div>
-
-            {/* Right - Image */}
-            <div className="w-full lg:w-1/2 flex justify-end">
-              <div
-                style={{
-                  width: "585px",
-                  maxWidth: "100%",
-                  height: "473px",
-                  backgroundImage:
-                    "url('/assets/images/sustainability/plant.png')",
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
-                }}
-              />
             </div>
           </div>
         </div>
