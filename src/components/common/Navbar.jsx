@@ -24,8 +24,8 @@ const Navbar = () => {
       <header
         className="fixed top-0 left-0 w-full z-50 flex justify-center items-center"
         style={{
-          background: "rgba(255, 255, 255, 0.1)",
-          boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
+          background: "rgba(255, 255, 255, 0.25)",
+          boxShadow: "0 4px 16px 0 rgba(31, 38, 135, 0.2)",
           backdropFilter: "blur(20px)",
           border: "1px solid rgba(255, 255, 255, 0.18)",
           height: "107px",
@@ -105,7 +105,7 @@ const Navbar = () => {
             isMobileMenuOpen ? "translate-y-0" : "-translate-y-full"
           }`}
           style={{
-            background: "rgba(255, 255, 255, 0.1)",
+            background: "rgba(255, 255, 255, 0.25)",
             backdropFilter: "blur(20px)",
             border: "1px solid rgba(255, 255, 255, 0.18)",
           }}
