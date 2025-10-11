@@ -24,9 +24,10 @@ const Navbar = () => {
       <header
         className="fixed top-0 left-0 w-full z-50 flex justify-center items-center"
         style={{
-          background: "rgba(217, 217, 217, 0.27)",
-          boxShadow: "0 22px 20.6px 0 rgba(0, 0, 0, 0.10) inset",
-          backdropFilter: "blur(9.3px)",
+          background: "rgba(255, 255, 255, 0.1)",
+          boxShadow: "0 8px 32px 0 rgba(31, 38, 135, 0.37)",
+          backdropFilter: "blur(20px)",
+          border: "1px solid rgba(255, 255, 255, 0.18)",
           height: "107px",
         }}
       >
@@ -52,7 +53,7 @@ const Navbar = () => {
                   `text-xs xl:text-sm font-semibold tracking-wide transition-colors duration-200 font-[Montserrat] whitespace-nowrap ${
                     isActive
                       ? "text-[#FFA273]"
-                      : "text-white hover:text-[#FFA273]"
+                      : "text-[#2C2C2C] hover:text-[#FFA273]"
                   }`
                 }
               >
@@ -68,17 +69,17 @@ const Navbar = () => {
             aria-label="Toggle mobile menu"
           >
             <span
-              className={`w-6 h-0.5 bg-white transition-all duration-300 ${
+              className={`w-6 h-0.5 bg-[#2C2C2C] transition-all duration-300 ${
                 isMobileMenuOpen ? "rotate-45 translate-y-2" : ""
               }`}
             ></span>
             <span
-              className={`w-6 h-0.5 bg-white transition-all duration-300 ${
+              className={`w-6 h-0.5 bg-[#2C2C2C] transition-all duration-300 ${
                 isMobileMenuOpen ? "opacity-0" : ""
               }`}
             ></span>
             <span
-              className={`w-6 h-0.5 bg-white transition-all duration-300 ${
+              className={`w-6 h-0.5 bg-[#2C2C2C] transition-all duration-300 ${
                 isMobileMenuOpen ? "-rotate-45 -translate-y-2" : ""
               }`}
             ></span>
@@ -104,8 +105,9 @@ const Navbar = () => {
             isMobileMenuOpen ? "translate-y-0" : "-translate-y-full"
           }`}
           style={{
-            background: "rgba(217, 217, 217, 0.95)",
-            backdropFilter: "blur(10px)",
+            background: "rgba(255, 255, 255, 0.1)",
+            backdropFilter: "blur(20px)",
+            border: "1px solid rgba(255, 255, 255, 0.18)",
           }}
         >
           <nav className="flex flex-col py-6 px-6 space-y-4">
@@ -117,8 +119,8 @@ const Navbar = () => {
                 className={({ isActive }) =>
                   `text-base font-semibold tracking-wide transition-colors duration-200 font-[Montserrat] py-2 px-4 rounded ${
                     isActive
-                      ? "text-[#FFA273] bg-white/20"
-                      : "text-white hover:text-[#FFA273] hover:bg-white/10"
+                      ? "text-[#FFA273] bg-gray-100"
+                      : "text-[#2C2C2C] hover:text-[#FFA273] hover:bg-gray-50"
                   }`
                 }
               >
