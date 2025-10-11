@@ -1,31 +1,55 @@
 import React from "react";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
 import { productVarient } from "../../../data/Data";
 
 const ProductVarient = () => {
   return (
     <section className="bg-[#F7FDFF] py-12 sm:py-16 lg:py-20 flex flex-col items-center justify-center px-4 sm:px-6 lg:px-0">
       {/* heading */}
-      <div className="text-center mb-12 sm:mb-16 lg:mb-25">
+      <motion.div
+        className="text-center mb-12 sm:mb-16 lg:mb-25"
+        initial={{ opacity: 0, y: 30 }}
+        whileInView={{ opacity: 1, y: 0 }}
+        viewport={{ once: true }}
+        transition={{ duration: 0.6, ease: "easeOut" }}
+      >
         <h2 className='font-["Playfair_Display"] text-[28px] sm:text-[36px] lg:text-[48px] font-normal leading-[36px] sm:leading-[48px] lg:leading-[60px] tracking-[-0.7px] text-[#293037]'>
           Offering A <span className="text-[#FFA273]">Wide Variety</span> <br />
           of <span className="text-[#FFA273]">Product</span> Range
         </h2>
-      </div>
+      </motion.div>
 
       {/* product images */}
       <div className="flex flex-wrap sm:flex-nowrap gap-4 sm:gap-6 lg:gap-[24px] justify-center items-end">
         {productVarient.map((item, index) => (
-          <div
+          <motion.div
             key={index}
-            className={`relative w-[160px] sm:w-[180px] lg:w-[228.17px] h-[400px] sm:h-[500px] lg:h-[607.743px] flex-shrink-0 bg-cover bg-center rounded-sm overflow-hidden group cursor-pointer ${
+            className={`relative w-[160px] sm:w-[180px] lg:w-[228.17px] h-[400px] sm:h-[500px] lg:h-[607.743px] flex-shrink-0 rounded-sm overflow-hidden group cursor-pointer ${
               index % 2 === 1
                 ? "sm:translate-y-[30px] lg:translate-y-[60px]"
                 : "-translate-y-[0px]"
             }`}
-            style={{
-              backgroundImage: `linear-gradient(180deg, rgba(37,37,37,0.38) 5.3%, rgba(6,5,5,0.18) 89.98%), url(${item.img})`,
+            initial={{ opacity: 0, y: 50 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{
+              duration: 0.6,
+              delay: index * 0.1,
+              ease: "easeOut",
+            }}
+            whileHover={{
+              scale: 1.05,
+              transition: { duration: 0.3 },
             }}
           >
+            {/* Background Image with Zoom Effect */}
+            <div
+              className="absolute inset-0 bg-cover bg-center transition-transform duration-500 ease-out group-hover:scale-110"
+              style={{
+                backgroundImage: `linear-gradient(180deg, rgba(37,37,37,0.38) 5.3%, rgba(6,5,5,0.18) 89.98%), url(${item.img})`,
+              }}
+            />
             {/* Hover effect */}
             <div className="absolute inset-0 bg-[linear-gradient(180deg,rgba(0,0,0,0.63)_5.3%,rgba(0,0,0,0.67)_56.29%,rgba(0,0,0,0.65)_100%)] opacity-0 group-hover:opacity-100 transition-opacity duration-300"></div>
 
@@ -42,7 +66,7 @@ const ProductVarient = () => {
                 {item.title}
               </p>
             </div>
-          </div>
+          </motion.div>
         ))}
       </div>
     </section>

@@ -1,4 +1,6 @@
 import { useNavigate } from "react-router-dom";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
 
 const Factory = () => {
   const navigate = useNavigate();
@@ -11,19 +13,38 @@ const Factory = () => {
     <section className="w-full px-4 py-16 md:py-24 bg-[#F7FDFF]">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
-        <div className="text-center mb-14">
+        <motion.div
+          className="text-center mb-14"
+          initial={{ opacity: 0, y: 30 }}
+          whileInView={{ opacity: 1, y: 0 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, ease: "easeOut" }}
+        >
           <h2 className='text-3xl md:text-4xl lg:text-5xl font-light mb-6 font-["Playfair_Display"] text-[#293037]'>
             Our <span className="text-[#FFA273]">Factory</span>
           </h2>
-          <p className="text-[#293037] text-lg md:text-xl max-w-3xl mx-auto font-[Montserrat]">
+          <motion.p
+            className="text-[#293037] text-lg md:text-xl max-w-3xl mx-auto font-[Montserrat]"
+            initial={{ opacity: 0, y: 20 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+          >
             Operating our own state-of-the-art garment factory with
             <br className="hidden md:block" />
             advanced machinery, skilled teams, and strict compliance.
-          </p>
-        </div>
+          </motion.p>
+        </motion.div>
 
         {/* Factory Image with Button */}
-        <div className="relative w-full rounded-3xl overflow-hidden">
+        <motion.div
+          className="relative w-full rounded-3xl overflow-hidden"
+          initial={{ opacity: 0, scale: 0.95 }}
+          whileInView={{ opacity: 1, scale: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.8, delay: 0.4, ease: "easeOut" }}
+          whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
+        >
           <img
             src="/assets/images/home/factory.png"
             alt="Our Factory"
@@ -31,9 +52,18 @@ const Factory = () => {
           />
 
           {/* Button positioned on top right */}
-          <button
+          <motion.button
             onClick={handleClick}
             className="group absolute top-0 right-0 md:top-1 md:right-2 flex items-center gap-0.5 rounded-[10px] bg-black transition-all duration-200 p-0.5 hover:shadow-lg cursor-pointer"
+            initial={{ opacity: 0, x: 20, y: -20 }}
+            whileInView={{ opacity: 1, x: 0, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.8, ease: "easeOut" }}
+            whileHover={{
+              scale: 1.05,
+              transition: { duration: 0.2 },
+            }}
+            whileTap={{ scale: 0.95 }}
           >
             {/* SVG Icon - directly on black background */}
             <div className="flex items-center justify-center w-8 md:w-10 h-8 md:h-10 transition-all duration-200 group-hover:order-2 order-1">
@@ -50,8 +80,8 @@ const Factory = () => {
                 Our factory
               </span>
             </div>
-          </button>
-        </div>
+          </motion.button>
+        </motion.div>
       </div>
     </section>
   );
