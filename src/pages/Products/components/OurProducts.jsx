@@ -13,14 +13,25 @@ const OurProducts = () => {
     "WORKWEAR",
   ];
 
+  // Function to shuffle array
+  const shuffleArray = (array) => {
+    const shuffled = [...array];
+    for (let i = shuffled.length - 1; i > 0; i--) {
+      const j = Math.floor(Math.random() * (i + 1));
+      [shuffled[i], shuffled[j]] = [shuffled[j], shuffled[i]];
+    }
+    return shuffled;
+  };
+
   const getFilteredProducts = () => {
     if (activeTab === "ALL") {
-      return [
+      const allProducts = [
         ...products.outerwear,
         ...products.casualwear,
         ...products.bottoms,
         ...products.uniform,
       ];
+      return shuffleArray(allProducts);
     } else if (activeTab === "OUTERWEAR") {
       return products.outerwear;
     } else if (activeTab === "CASUAL WEAR") {
@@ -94,10 +105,10 @@ const OurProducts = () => {
                   Product code: {product.productCode}
                 </p>
                 <p className="text-sm md:text-base font-[Montserrat] text-[#717171] mb-1">
-                  Moq-code#{product.mogCode}
+                  MOQ: {product.mogCode}
                 </p>
                 <p className="text-sm md:text-base font-[Montserrat] text-[#717171] mb-3">
-                  Fab-code#{product.fabCode}
+                  FOB: {product.fabCode}
                 </p>
                 <p className="text-sm text-[#293037] leading-relaxed">
                   {product.description}
