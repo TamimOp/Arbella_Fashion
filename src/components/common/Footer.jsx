@@ -1,3 +1,6 @@
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
+
 const Footer = () => {
   const aboutLinks = [
     { name: "WHY CHOOSE ARBELLA", href: "#" },
@@ -42,103 +45,252 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20">
           <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 text-center md:text-left">
             {/* Logo and Description */}
-            <div className="lg:col-span-1">
-              <img
+            <motion.div
+              className="lg:col-span-1"
+              initial={{ x: -30, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, delay: 0.6 }}
+            >
+              <motion.img
                 src="/assets/icons/arbella_Logo_White.svg"
                 alt="Arbella Logo"
                 className="h-16 md:h-20 mb-6 mx-auto md:mx-0"
+                initial={{ scale: 0.8, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 0.8 }}
+                whileHover={{ scale: 1.05, transition: { duration: 0.2 } }}
               />
-              <p className="text-gray-300 text-sm leading-relaxed mb-8">
+              <motion.p
+                className="text-gray-300 text-sm leading-relaxed mb-8"
+                initial={{ y: 20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 1.0 }}
+              >
                 Cras maecenas elementum quam sit purus ullamcorper tellus. A
                 posuere tempus egestas orci eget.
-              </p>
+              </motion.p>
 
               {/* Social Icons */}
-              <div className="flex gap-4 justify-center md:justify-start">
-                {socialIcons.map((social) => (
-                  <a
+              <motion.div
+                className="flex gap-4 justify-center md:justify-start"
+                initial={{ y: 20, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.5, delay: 1.2 }}
+              >
+                {socialIcons.map((social, index) => (
+                  <motion.a
                     key={social.name}
                     href={social.href}
                     className="hover:opacity-80 transition-opacity"
                     aria-label={social.name}
+                    initial={{ scale: 0, rotate: -180 }}
+                    whileInView={{ scale: 1, rotate: 0 }}
+                    viewport={{ once: true }}
+                    transition={{
+                      duration: 0.4,
+                      delay: 1.4 + index * 0.1,
+                      type: "spring",
+                      stiffness: 200,
+                    }}
+                    whileHover={{
+                      scale: 1.1,
+                      rotate: 5,
+                      transition: { duration: 0.2 },
+                    }}
+                    whileTap={{ scale: 0.95 }}
                   >
                     <img
                       src={social.icon}
                       alt={social.name}
                       className="w-12 h-12 md:w-14 md:h-14"
                     />
-                  </a>
+                  </motion.a>
                 ))}
-              </div>
-            </div>
+              </motion.div>
+            </motion.div>
 
             {/* ABOUT Section */}
-            <div className="lg:col-span-1">
-              <h3 className="text-white text-lg font-semibold mb-6">ABOUT</h3>
+            <motion.div
+              className="lg:col-span-1"
+              initial={{ x: -20, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, delay: 0.8 }}
+            >
+              <motion.h3
+                className="text-white text-lg font-semibold mb-6"
+                initial={{ y: -10, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: 1.0 }}
+              >
+                ABOUT
+              </motion.h3>
               <ul className="space-y-4">
-                {aboutLinks.map((link) => (
-                  <li key={link.name}>
-                    <a
+                {aboutLinks.map((link, index) => (
+                  <motion.li
+                    key={link.name}
+                    initial={{ x: -15, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: 1.2 + index * 0.1 }}
+                  >
+                    <motion.a
                       href={link.href}
                       className="text-gray-300 text-sm hover:text-white transition-colors"
+                      whileHover={{
+                        x: 5,
+                        color: "#ffffff",
+                        transition: { duration: 0.2 },
+                      }}
                     >
                       {link.name}
-                    </a>
-                  </li>
+                    </motion.a>
+                  </motion.li>
                 ))}
               </ul>
-            </div>
+            </motion.div>
 
             {/* PRODUCTS Section */}
-            <div className="lg:col-span-1">
-              <h3 className="text-white text-lg font-semibold mb-6">
+            <motion.div
+              className="lg:col-span-1"
+              initial={{ y: 20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, delay: 1.0 }}
+            >
+              <motion.h3
+                className="text-white text-lg font-semibold mb-6"
+                initial={{ y: -10, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: 1.2 }}
+              >
                 PRODUCTS
-              </h3>
+              </motion.h3>
               <ul className="space-y-4">
-                {productLinks.map((link) => (
-                  <li key={link.name}>
-                    <a
+                {productLinks.map((link, index) => (
+                  <motion.li
+                    key={link.name}
+                    initial={{ x: -15, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: 1.4 + index * 0.1 }}
+                  >
+                    <motion.a
                       href={link.href}
                       className="text-gray-300 text-sm hover:text-white transition-colors"
+                      whileHover={{
+                        x: 5,
+                        color: "#ffffff",
+                        transition: { duration: 0.2 },
+                      }}
                     >
                       {link.name}
-                    </a>
-                  </li>
+                    </motion.a>
+                  </motion.li>
                 ))}
               </ul>
-            </div>
+            </motion.div>
 
             {/* LOCATIONS Section */}
-            <div className="lg:col-span-1">
-              <h3 className="text-white text-lg font-semibold mb-6">
+            <motion.div
+              className="lg:col-span-1"
+              initial={{ x: 20, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, delay: 1.2 }}
+            >
+              <motion.h3
+                className="text-white text-lg font-semibold mb-6"
+                initial={{ y: -10, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: 1.4 }}
+              >
                 LOCATIONS
-              </h3>
+              </motion.h3>
               <ul className="space-y-4">
-                <li className="text-gray-300 text-sm">Dhaka, Bangladesh</li>
-                <li className="text-gray-300 text-sm">+8800000000000</li>
+                <motion.li
+                  className="text-gray-300 text-sm"
+                  initial={{ x: 15, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: 1.6 }}
+                  whileHover={{
+                    x: 5,
+                    color: "#ffffff",
+                    transition: { duration: 0.2 },
+                  }}
+                >
+                  Dhaka, Bangladesh
+                </motion.li>
+                <motion.li
+                  className="text-gray-300 text-sm"
+                  initial={{ x: 15, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: 1.7 }}
+                  whileHover={{
+                    x: 5,
+                    color: "#ffffff",
+                    transition: { duration: 0.2 },
+                  }}
+                >
+                  +8800000000000
+                </motion.li>
               </ul>
-            </div>
+            </motion.div>
 
             {/* Drop Resume Section */}
-            <div className="lg:col-span-1">
-              <h3 className="text-white text-lg font-semibold mb-6">
+            <motion.div
+              className="lg:col-span-1"
+              initial={{ x: 30, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true, amount: 0.3 }}
+              transition={{ duration: 0.6, delay: 1.4 }}
+            >
+              <motion.h3
+                className="text-white text-lg font-semibold mb-6"
+                initial={{ y: -10, opacity: 0 }}
+                whileInView={{ y: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: 1.6 }}
+              >
                 Drop Resume
-              </h3>
-              <a
+              </motion.h3>
+              <motion.a
                 href="mailto:careers@arbella.com"
                 className="text-gray-300 text-sm hover:text-white transition-colors"
+                initial={{ scale: 0.9, opacity: 0 }}
+                whileInView={{ scale: 1, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: 1.8 }}
+                whileHover={{
+                  scale: 1.05,
+                  color: "#ffffff",
+                  transition: { duration: 0.2 },
+                }}
               >
                 careers@arbella.com
-              </a>
-            </div>
+              </motion.a>
+            </motion.div>
           </div>
 
           {/* Divider */}
-          <div
+          <motion.div
             className="mt-12 md:mt-16"
             style={{
               borderTop: "2px solid rgba(255, 255, 255, 0.68)",
             }}
+            initial={{ scaleX: 0, opacity: 0 }}
+            whileInView={{ scaleX: 1, opacity: 1 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.8, delay: 2.0 }}
           />
         </div>
       </div>
@@ -148,27 +300,54 @@ const Footer = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
             {/* Copyright */}
-            <p className="text-white text-sm">
+            <motion.p
+              className="text-white text-sm"
+              initial={{ x: -20, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 0.8 }}
+            >
               © Arabella 2025 . All right reserved
-            </p>
+            </motion.p>
 
             {/* Social Icons */}
-            <div className="flex gap-4 justify-center md:justify-start">
-              {bottomSocialIcons.map((social) => (
-                <a
+            <motion.div
+              className="flex gap-4 justify-center md:justify-start"
+              initial={{ x: 20, opacity: 0 }}
+              whileInView={{ x: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.4, delay: 1.0 }}
+            >
+              {bottomSocialIcons.map((social, index) => (
+                <motion.a
                   key={social.name}
                   href={social.href}
                   className="hover:opacity-80 transition-opacity"
                   aria-label={social.name}
+                  initial={{ scale: 0, rotate: -90 }}
+                  whileInView={{ scale: 1, rotate: 0 }}
+                  viewport={{ once: true }}
+                  transition={{
+                    duration: 0.3,
+                    delay: 1.2 + index * 0.1,
+                    type: "spring",
+                    stiffness: 200,
+                  }}
+                  whileHover={{
+                    scale: 1.2,
+                    rotate: 10,
+                    transition: { duration: 0.2 },
+                  }}
+                  whileTap={{ scale: 0.9 }}
                 >
                   <img
                     src={social.icon}
                     alt={social.name}
                     className="w-6 h-6"
                   />
-                </a>
+                </motion.a>
               ))}
-            </div>
+            </motion.div>
           </div>
         </div>
       </div>
