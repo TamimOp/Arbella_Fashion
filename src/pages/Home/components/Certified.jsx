@@ -1,3 +1,6 @@
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
+
 const Certified = () => {
   const logos = [
     { id: 1, src: "/assets/images/home/logo1.png", alt: "Amfori" },
@@ -22,25 +25,52 @@ const Certified = () => {
 
         {/* Logos Container */}
         <div
-          className="py-3 md:py-4 lg:py-5"
+          className="py-3 md:py-4 lg:py-5 overflow-hidden"
           style={{
             borderTop: "5px solid rgba(202, 202, 202, 0.37)",
             borderBottom: "5px solid rgba(202, 202, 202, 0.37)",
           }}
         >
-          <div className="grid grid-cols-3 gap-6 sm:grid-cols-3 sm:gap-8 lg:grid-cols-6 lg:gap-[113px] items-center justify-items-center px-4 sm:px-6 lg:px-8">
-            {logos.map((logo) => (
-              <div
-                key={logo.id}
-                className="flex items-center justify-center w-full h-12 md:h-16 lg:h-20"
-              >
-                <img
-                  src={logo.src}
-                  alt={logo.alt}
-                  className="max-w-full max-h-full object-contain"
-                />
-              </div>
-            ))}
+          <div className="relative">
+            <motion.div
+              className="flex items-center gap-12 md:gap-16 lg:gap-20 whitespace-nowrap"
+              animate={{
+                x: ["-100%", "0%"],
+              }}
+              transition={{
+                x: {
+                  repeat: Infinity,
+                  repeatType: "loop",
+                  duration: 25,
+                  ease: "linear",
+                },
+              }}
+              style={{
+                display: "flex",
+                minWidth: "200%",
+              }}
+            >
+              {/* Multiple sets of logos for truly seamless scrolling */}
+              {[...Array(4)].map((_, setIndex) => (
+                <div
+                  key={setIndex}
+                  className="flex items-center gap-12 md:gap-16 lg:gap-20 flex-shrink-0"
+                >
+                  {logos.map((logo) => (
+                    <div
+                      key={`${setIndex}-${logo.id}`}
+                      className="flex items-center justify-center flex-shrink-0 w-24 md:w-28 lg:w-32 h-12 md:h-16 lg:h-20"
+                    >
+                      <img
+                        src={logo.src}
+                        alt={logo.alt}
+                        className="max-w-full max-h-full object-contain"
+                      />
+                    </div>
+                  ))}
+                </div>
+              ))}
+            </motion.div>
           </div>
         </div>
       </div>
