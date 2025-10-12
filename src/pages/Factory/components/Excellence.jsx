@@ -1,4 +1,6 @@
 import { useState } from "react";
+// eslint-disable-next-line no-unused-vars
+import { motion } from "framer-motion";
 
 const Excellence = () => {
   const sections = [
@@ -90,83 +92,159 @@ const Excellence = () => {
 
   return (
     <section className="w-full bg-white">
-      <div className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8">
-        <h2 className="text-4xl md:text-5xl lg:text-[64px] font-[IvyPresto_Headline] text-center text-[#000] mb-4">
+      <motion.div
+        className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8"
+        initial={{ y: 60, opacity: 0 }}
+        whileInView={{ y: 0, opacity: 1 }}
+        viewport={{ once: true, amount: 0.3 }}
+        transition={{ duration: 0.8, ease: "easeOut" }}
+      >
+        <motion.h2
+          className="text-4xl md:text-5xl lg:text-[64px] font-[IvyPresto_Headline] text-center text-[#000] mb-4"
+          initial={{ scale: 0.9, opacity: 0 }}
+          whileInView={{ scale: 1, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.7, delay: 0.2, ease: "easeOut" }}
+        >
           Excellence in{" "}
           <span style={{ color: "#FFA475" }}>
             Production & <br /> Responsibility
           </span>
-        </h2>
-        <p className="text-lg md:text-2xl text-center text-[#293037] max-w-3xl mx-auto font-[Montserrat]">
+        </motion.h2>
+        <motion.p
+          className="text-lg md:text-2xl text-center text-[#293037] max-w-3xl mx-auto font-[Montserrat]"
+          initial={{ y: 30, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true }}
+          transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+        >
           From precision cutting to community care — Arbella combines quality,
           safety, and ethics in every step.
-        </p>
-      </div>
+        </motion.p>
+      </motion.div>
 
       <div className="max-w-[1400px] mx-auto overflow-hidden">
         {/* Store & Kanban Section */}
-        <div className="relative w-full py-16 md:py-20 lg:py-24">
+        <motion.div
+          className="relative w-full py-16 md:py-20 lg:py-24"
+          initial={{ y: 80, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8, ease: "easeOut" }}
+        >
           {/* Store BG */}
-          <div
+          <motion.div
             className="absolute right-100 top-25 w-[643px] h-[360px] opacity-15 pointer-events-none"
             style={{
               backgroundImage: "url('/assets/images/factory/storeBG.png')",
               backgroundSize: "contain",
               backgroundRepeat: "no-repeat",
             }}
+            initial={{ x: 100, opacity: 0, rotate: 5 }}
+            animate={{ x: 0, opacity: 0.15, rotate: 0 }}
+            transition={{ duration: 1.5, ease: "easeOut" }}
           />
 
           <div className="relative z-10 px-4 sm:px-6 lg:px-8">
             <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 xl:gap-60">
-              <div className="w-full lg:w-1/2 flex justify-start">
-                <div className="relative w-[529px] h-[352px]">
-                  <img
+              <motion.div
+                className="w-full lg:w-1/2 flex justify-start"
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.2, ease: "easeOut" }}
+              >
+                <motion.div
+                  className="relative w-[529px] h-[352px]"
+                  whileHover={{ scale: 1.02, transition: { duration: 0.3 } }}
+                >
+                  <motion.img
                     src={sections[0].images[currentIndexes[1]]}
                     alt={`Store & Kanban ${currentIndexes[1] + 1}`}
                     className="w-full h-full object-cover rounded-lg shadow-xl"
+                    initial={{ scale: 0.9, opacity: 0 }}
+                    whileInView={{ scale: 1, opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.5, delay: 0.4, ease: "easeOut" }}
                   />
 
-                  <button
+                  <motion.button
                     onClick={() => handlePrevious(1, sections[0].images.length)}
                     className="absolute left-4 top-1/2 -translate-y-1/2 flex items-center justify-center transition-colors cursor-pointer"
                     aria-label="Previous image"
+                    initial={{ x: -20, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: 0.6, ease: "easeOut" }}
+                    whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                    whileTap={{ scale: 0.9 }}
                   >
                     <img
                       src="/assets/icons/arrowLeft.svg"
                       alt="Previous"
                       className="w-[40px] h-[40px]"
                     />
-                  </button>
+                  </motion.button>
 
-                  <button
+                  <motion.button
                     onClick={() => handleNext(1, sections[0].images.length)}
                     className="absolute right-4 top-1/2 -translate-y-1/2 flex items-center justify-center transition-colors cursor-pointer"
                     aria-label="Next image"
+                    initial={{ x: 20, opacity: 0 }}
+                    whileInView={{ x: 0, opacity: 1 }}
+                    viewport={{ once: true }}
+                    transition={{ duration: 0.4, delay: 0.6, ease: "easeOut" }}
+                    whileHover={{ scale: 1.1, transition: { duration: 0.2 } }}
+                    whileTap={{ scale: 0.9 }}
                   >
                     <img
                       src="/assets/icons/arrowRight.svg"
                       alt="Next"
                       className="w-[40px] h-[40px]"
                     />
-                  </button>
-                </div>
-              </div>
+                  </motion.button>
+                </motion.div>
+              </motion.div>
 
-              <div className="w-full lg:w-1/2">
-                <h3 className="text-3xl md:text-4xl font-['IvyPresto_Headline'] text-[#000] mb-4 md:mb-6">
+              <motion.div
+                className="w-full lg:w-1/2"
+                initial={{ x: 50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+              >
+                <motion.h3
+                  className="text-3xl md:text-4xl font-['IvyPresto_Headline'] text-[#000] mb-4 md:mb-6"
+                  initial={{ y: 20, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
+                >
                   Store & Kanban
-                </h3>
-                <p className="text-lg md:text-2xl text-[#293037] leading-relaxed font-['Montserrat']">
+                </motion.h3>
+                <motion.p
+                  className="text-lg md:text-2xl text-[#293037] leading-relaxed font-['Montserrat']"
+                  initial={{ y: 15, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: 0.7, ease: "easeOut" }}
+                >
                   At Arbella, we follow the Kanban practice to ensure smooth
                   material flow and prevent overproduction.
-                </p>
-              </div>
+                </motion.p>
+              </motion.div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Sample Section */}
-        <div className="relative w-full py-16 md:py-20 lg:py-24">
+        <motion.div
+          className="relative w-full py-16 md:py-20 lg:py-24"
+          initial={{ y: 80, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
+        >
           {/* Sample BG */}
           <div
             className="absolute left-[-300px] top-0 w-[856px] h-[479px] opacity-15 pointer-events-none"
@@ -213,21 +291,45 @@ const Excellence = () => {
                 </div>
               </div>
 
-              <div className="w-full lg:w-1/2">
-                <h3 className="text-3xl md:text-4xl font-['IvyPresto_Headline'] text-[#000] mb-4 md:mb-6">
+              <motion.div
+                className="w-full lg:w-1/2"
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+              >
+                <motion.h3
+                  className="text-3xl md:text-4xl font-['IvyPresto_Headline'] text-[#000] mb-4 md:mb-6"
+                  initial={{ y: 20, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.5, ease: "easeOut" }}
+                >
                   Sample
-                </h3>
-                <p className="text-lg md:text-2xl text-[#293037] leading-relaxed font-['Montserrat']">
+                </motion.h3>
+                <motion.p
+                  className="text-lg md:text-2xl text-[#293037] leading-relaxed font-['Montserrat']"
+                  initial={{ y: 15, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: 0.7, ease: "easeOut" }}
+                >
                   Rapid prototyping and design development to bring buyer
                   concepts to life quickly and SMS sample facility.
-                </p>
-              </div>
+                </motion.p>
+              </motion.div>
             </div>
           </div>
-        </div>
+        </motion.div>
 
         {/* Cutting Section */}
-        <div className="relative w-full py-16 md:py-20 lg:py-24">
+        <motion.div
+          className="relative w-full py-16 md:py-20 lg:py-24"
+          initial={{ y: 80, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
+        >
           {/* Cutting BG */}
           <div
             className="absolute right-56 bottom-0 w-[837px] h-[469px] opacity-15 pointer-events-none"
@@ -238,9 +340,21 @@ const Excellence = () => {
             }}
           />
 
-          <div className="relative z-10 px-4 sm:px-6 lg:px-8">
+          <motion.div
+            className="relative z-10 px-4 sm:px-6 lg:px-8"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+          >
             <div className="flex flex-col lg:flex-row items-center justify-between gap-8 lg:gap-12 xl:gap-60">
-              <div className="w-full lg:w-1/2 flex justify-start">
+              <motion.div
+                className="w-full lg:w-1/2 flex justify-start"
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+              >
                 <div className="relative w-[529px] h-[352px]">
                   <img
                     src={sections[2].images[currentIndexes[3]]}
@@ -272,23 +386,47 @@ const Excellence = () => {
                     />
                   </button>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="w-full lg:w-1/2">
-                <h3 className="text-3xl md:text-4xl font-['IvyPresto_Headline'] text-[#000] mb-4 md:mb-6">
+              <motion.div
+                className="w-full lg:w-1/2"
+                initial={{ x: 50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
+              >
+                <motion.h3
+                  className="text-3xl md:text-4xl font-['IvyPresto_Headline'] text-[#000] mb-4 md:mb-6"
+                  initial={{ y: 20, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.6, ease: "easeOut" }}
+                >
                   Cutting
-                </h3>
-                <p className="text-lg md:text-2xl text-[#293037] leading-relaxed font-['Montserrat']">
+                </motion.h3>
+                <motion.p
+                  className="text-lg md:text-2xl text-[#293037] leading-relaxed font-['Montserrat']"
+                  initial={{ y: 15, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: 0.8, ease: "easeOut" }}
+                >
                   Precision cutting with advanced technology for flawless
                   garment shaping.
-                </p>
-              </div>
+                </motion.p>
+              </motion.div>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         {/* Production Section */}
-        <div className="relative w-full py-16 md:py-20 lg:py-24">
+        <motion.div
+          className="relative w-full py-16 md:py-20 lg:py-24"
+          initial={{ y: 80, opacity: 0 }}
+          whileInView={{ y: 0, opacity: 1 }}
+          viewport={{ once: true, amount: 0.2 }}
+          transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
+        >
           {/* Production BG */}
           <div
             className="absolute left-50 top-10 w-[771px] h-[432px] opacity-15 pointer-events-none"
@@ -299,9 +437,21 @@ const Excellence = () => {
             }}
           />
 
-          <div className="relative z-10 px-4 sm:px-6 lg:px-8">
+          <motion.div
+            className="relative z-10 px-4 sm:px-6 lg:px-8"
+            initial={{ opacity: 0, y: 30 }}
+            whileInView={{ opacity: 1, y: 0 }}
+            viewport={{ once: true }}
+            transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
+          >
             <div className="flex flex-col lg:flex-row-reverse items-center justify-between gap-8 lg:gap-12 xl:gap-60">
-              <div className="w-full lg:w-1/2 flex justify-end">
+              <motion.div
+                className="w-full lg:w-1/2 flex justify-end"
+                initial={{ x: 50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.4, ease: "easeOut" }}
+              >
                 <div className="relative w-[529px] h-[352px]">
                   <img
                     src={sections[3].images[currentIndexes[4]]}
@@ -333,20 +483,38 @@ const Excellence = () => {
                     />
                   </button>
                 </div>
-              </div>
+              </motion.div>
 
-              <div className="w-full lg:w-1/2">
-                <h3 className="text-3xl md:text-4xl font-['IvyPresto_Headline'] text-[#000] mb-4 md:mb-6">
+              <motion.div
+                className="w-full lg:w-1/2"
+                initial={{ x: -50, opacity: 0 }}
+                whileInView={{ x: 0, opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.6, delay: 0.5, ease: "easeOut" }}
+              >
+                <motion.h3
+                  className="text-3xl md:text-4xl font-['IvyPresto_Headline'] text-[#000] mb-4 md:mb-6"
+                  initial={{ y: 20, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.5, delay: 0.6, ease: "easeOut" }}
+                >
                   Production
-                </h3>
-                <p className="text-lg md:text-2xl text-[#293037] leading-relaxed font-['Montserrat']">
+                </motion.h3>
+                <motion.p
+                  className="text-lg md:text-2xl text-[#293037] leading-relaxed font-['Montserrat']"
+                  initial={{ y: 15, opacity: 0 }}
+                  whileInView={{ y: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: 0.8, ease: "easeOut" }}
+                >
                   A skilled workforce ensuring accuracy, efficiency, and
                   large-scale capacity.
-                </p>
-              </div>
+                </motion.p>
+              </motion.div>
             </div>
-          </div>
-        </div>
+          </motion.div>
+        </motion.div>
 
         {/* Inspection & Finishing Section */}
         <div className="relative w-full py-16 md:py-20 lg:py-24">
