@@ -1,8 +1,21 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 // eslint-disable-next-line no-unused-vars
-import { motion } from "framer-motion";
+import { motion, AnimatePresence } from "framer-motion";
 
 const SupplyChain = () => {
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
+  const images = [
+    "/assets/images/whyChooseArbella/supplychain.png",
+    "/assets/images/whyChooseArbella/supplychain2.png",
+  ];
+
+  useEffect(() => {
+    const interval = setInterval(() => {
+      setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
+    }, 2000); // Switch every 1 second
+
+    return () => clearInterval(interval);
+  }, [images.length]);
   return (
     <section className="bg-[#F7F7F7] py-24 relative overflow-hidden">
       {/* Top Right Background Image */}
@@ -51,24 +64,22 @@ const SupplyChain = () => {
           </motion.p>
         </motion.div>
 
-        {/* ---- Bottom Full Image ---- */}
+        {/* ---- Bottom Switching Images ---- */}
         <motion.div
-          className="w-full flex justify-center"
+          className="w-full flex justify-center relative"
           initial={{ y: 80, opacity: 0, scale: 0.95 }}
           whileInView={{ y: 0, opacity: 1, scale: 1 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 1.0, delay: 0.3, ease: "easeOut" }}
         >
-          <motion.img
-            src="/assets/images/whyChooseArbella/supplychain.png"
-            alt="Supply Chain Process"
-            className="w-full max-w-[1400px] h-auto"
-            initial={{ opacity: 0, y: 30 }}
-            whileInView={{ opacity: 1, y: 0 }}
-            viewport={{ once: true }}
-            transition={{ duration: 0.8, delay: 0.6, ease: "easeOut" }}
-            whileHover={{ scale: 1.02, transition: { duration: 0.4 } }}
-          />
+          <div className="relative w-full max-w-[1400px]">
+            <img
+              src={images[currentImageIndex]}
+              alt={`Supply Chain Process ${currentImageIndex + 1}`}
+              className="w-full h-auto transition-opacity duration-500 ease-in-out"
+              style={{ opacity: 1 }}
+            />
+          </div>
         </motion.div>
       </div>
     </section>
