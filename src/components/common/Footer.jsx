@@ -307,7 +307,7 @@ const Footer = () => {
               viewport={{ once: true }}
               transition={{ duration: 0.4, delay: 0.8 }}
             >
-              © Arabella 2025 . All right reserved
+              © Arbella 2025 . All right reserved
             </motion.p>
 
             {/* Social Icons */}
