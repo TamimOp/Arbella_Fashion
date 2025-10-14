@@ -8,6 +8,7 @@ const Navbar = () => {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
 
   const navItems = [
+    { label: "HOME", path: "/" },
     { label: "ABOUT US", path: "/about-us" },
     { label: "PRODUCTS", path: "/products" },
     { label: "WHY CHOOSE ARBELLA", path: "/why-choose-arbella" },
