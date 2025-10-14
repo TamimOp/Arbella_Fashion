@@ -43,7 +43,7 @@ const OurProducts = () => {
     } else if (activeTab === "UNIFORM") {
       return products.uniform;
     } else if (activeTab === "WORKWEAR") {
-      return [];
+      return products.bottoms;
     }
     return [];
   };
