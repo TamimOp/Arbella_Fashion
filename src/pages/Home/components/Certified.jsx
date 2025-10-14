@@ -13,6 +13,11 @@ const Certified = () => {
     },
     { id: 5, src: "/assets/images/home/logo5.png", alt: "GOTS" },
     { id: 6, src: "/assets/images/home/logo6.png", alt: "OEKO-TEX" },
+    { id: 7, src: "/assets/images/home/logo7.png", alt: "Global-Recycled" },
+    { id: 8, src: "/assets/images/home/logo8.png", alt: "Higg-Index" },
+    { id: 9, src: "/assets/images/home/logo9.png", alt: "RSC" },
+    { id: 10, src: "/assets/images/home/logo10.png", alt: "SEDEX" },
+    { id: 11, src: "/assets/images/home/logo11.png", alt: "SODEXO" },
   ];
 
   return (
