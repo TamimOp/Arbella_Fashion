@@ -133,8 +133,8 @@ const Hero = () => {
           whileTap={{ scale: 0.95 }}
         >
           <img
-            src="/assets/icons/whatsApp.svg"
-            alt="WhatsApp"
+            src="/assets/icons/linkedin.svg"
+            alt="LinkedIn"
             className="w-6 h-6 sm:w-7 sm:h-7 lg:w-9 lg:h-9"
           />
         </motion.a>

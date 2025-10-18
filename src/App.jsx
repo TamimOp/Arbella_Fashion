@@ -1,13 +1,27 @@
 import { BrowserRouter } from "react-router-dom";
+import { useEffect } from "react";
+import { useLocation } from "react-router-dom";
 import Navbar from "./components/common/Navbar";
 import AppRoutes from "./routes/AppRoutes";
 import "./index.css";
 import Newsletter from "./components/common/Newsletter";
 import Footer from "./components/common/Footer";
 
+// ScrollToTop component to handle scroll restoration
+function ScrollToTop() {
+  const { pathname } = useLocation();
+
+  useEffect(() => {
+    window.scrollTo(0, 0);
+  }, [pathname]);
+
+  return null;
+}
+
 function App() {
   return (
     <BrowserRouter>
+      <ScrollToTop />
       <Navbar />
       <main>
         <AppRoutes />
