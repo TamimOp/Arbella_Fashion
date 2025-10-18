@@ -1,5 +1,4 @@
-// eslint-disable-next-line no-unused-vars
-import { motion } from "framer-motion";
+import "../../../components/marquee.css";
 
 const Certified = () => {
   const logos = [
@@ -30,52 +29,39 @@ const Certified = () => {
 
         {/* Logos Container */}
         <div
-          className="py-3 md:py-4 lg:py-5 overflow-hidden"
+          className="py-3 md:py-4 lg:py-5 marquee-wrapper"
           style={{
             borderTop: "5px solid rgba(202, 202, 202, 0.37)",
             borderBottom: "5px solid rgba(202, 202, 202, 0.37)",
           }}
         >
-          <div className="relative">
-            <motion.div
-              className="flex items-center gap-12 md:gap-16 lg:gap-20 whitespace-nowrap"
-              animate={{
-                x: ["-100%", "0%"],
-              }}
-              transition={{
-                x: {
-                  repeat: Infinity,
-                  repeatType: "loop",
-                  duration: 25,
-                  ease: "linear",
-                },
-              }}
-              style={{
-                display: "flex",
-                minWidth: "200%",
-              }}
-            >
-              {/* Multiple sets of logos for truly seamless scrolling */}
-              {[...Array(4)].map((_, setIndex) => (
-                <div
-                  key={setIndex}
-                  className="flex items-center gap-12 md:gap-16 lg:gap-20 flex-shrink-0"
-                >
-                  {logos.map((logo) => (
-                    <div
-                      key={`${setIndex}-${logo.id}`}
-                      className="flex items-center justify-center flex-shrink-0 w-24 md:w-28 lg:w-32 h-12 md:h-16 lg:h-20"
-                    >
-                      <img
-                        src={logo.src}
-                        alt={logo.alt}
-                        className="max-w-full max-h-full object-contain"
-                      />
-                    </div>
-                  ))}
-                </div>
-              ))}
-            </motion.div>
+          <div className="marquee-content">
+            {/* First set of logos */}
+            {logos.map((logo) => (
+              <div
+                key={`first-${logo.id}`}
+                className="marquee-item flex items-center justify-center w-24 md:w-28 lg:w-32 h-12 md:h-16 lg:h-20"
+              >
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+            ))}
+            {/* Second set of logos (duplicate for seamless loop) */}
+            {logos.map((logo) => (
+              <div
+                key={`second-${logo.id}`}
+                className="marquee-item flex items-center justify-center w-24 md:w-28 lg:w-32 h-12 md:h-16 lg:h-20"
+              >
+                <img
+                  src={logo.src}
+                  alt={logo.alt}
+                  className="max-w-full max-h-full object-contain"
+                />
+              </div>
+            ))}
           </div>
         </div>
       </div>

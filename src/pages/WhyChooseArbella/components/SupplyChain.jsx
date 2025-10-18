@@ -12,7 +12,7 @@ const SupplyChain = () => {
   useEffect(() => {
     const interval = setInterval(() => {
       setCurrentImageIndex((prevIndex) => (prevIndex + 1) % images.length);
-    }, 2000); // Switch every 1 second
+    }, 2000);
 
     return () => clearInterval(interval);
   }, [images.length]);
