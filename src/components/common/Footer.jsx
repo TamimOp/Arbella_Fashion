@@ -69,8 +69,8 @@ const Footer = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.5, delay: 1.0 }}
               >
-                Cras maecenas elementum quam sit purus ullamcorper tellus. A
-                posuere tempus egestas orci eget.
+                Crafting quality apparel for global brands with innovation,
+                integrity, and excellence.
               </motion.p>
 
               {/* Social Icons */}
@@ -212,7 +212,7 @@ const Footer = () => {
                 viewport={{ once: true }}
                 transition={{ duration: 0.4, delay: 1.4 }}
               >
-                LOCATIONS
+                ADDRESS
               </motion.h3>
               <ul className="space-y-4">
                 <motion.li
@@ -227,7 +227,7 @@ const Footer = () => {
                     transition: { duration: 0.2 },
                   }}
                 >
-                  Dhaka, Bangladesh
+                  arif@arbellafashion.com
                 </motion.li>
                 <motion.li
                   className="text-gray-300 text-sm"
@@ -242,6 +242,20 @@ const Footer = () => {
                   }}
                 >
                   +8800000000000
+                </motion.li>
+                <motion.li
+                  className="text-gray-300 text-sm"
+                  initial={{ x: 15, opacity: 0 }}
+                  whileInView={{ x: 0, opacity: 1 }}
+                  viewport={{ once: true }}
+                  transition={{ duration: 0.4, delay: 1.6 }}
+                  whileHover={{
+                    x: 5,
+                    color: "#ffffff",
+                    transition: { duration: 0.2 },
+                  }}
+                >
+                  38, Gararon, Bormi, Sreepur, Gazipur, Bangladesh
                 </motion.li>
               </ul>
             </motion.div>
