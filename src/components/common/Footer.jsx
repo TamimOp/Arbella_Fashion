@@ -36,14 +36,14 @@ const Footer = () => {
   ];
 
   return (
-    <footer className="w-full">
+    <footer className="w-full overflow-hidden">
       {/* Main Footer Section */}
       <div
-        className="w-full font-[Montserrat]"
+        className="w-full font-[Montserrat] overflow-hidden"
         style={{ backgroundColor: "#293037" }}
       >
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20">
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 text-center md:text-left">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-12 md:py-16 lg:py-20 overflow-hidden">
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-5 gap-8 lg:gap-12 text-center md:text-left overflow-hidden">
             {/* Logo and Description */}
             <motion.div
               className="lg:col-span-1"
@@ -296,8 +296,8 @@ const Footer = () => {
       </div>
 
       {/* Bottom Footer Section */}
-      <div className="w-full bg-black">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6">
+      <div className="w-full bg-black overflow-hidden">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 overflow-hidden">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
             {/* Copyright */}
             <motion.p

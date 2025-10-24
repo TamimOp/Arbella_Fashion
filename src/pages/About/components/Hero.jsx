@@ -14,13 +14,6 @@ const Hero = () => {
       />
 
       <motion.div
-        className="absolute inset-0 bg-black/10"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.2, delay: 0.3, ease: "easeOut" }}
-      ></motion.div>
-
-      <motion.div
         className="absolute top-1/2 -translate-y-1/2 right-0 flex flex-col justify-center items-center gap-[12px] sm:gap-[15px] lg:gap-[17.59px] w-[48px] sm:w-[55px] lg:w-[62px] h-[150px] sm:h-[175px] lg:h-[202px] bg-white shadow-md rounded-l-md"
         initial={{ x: 100, opacity: 0 }}
         animate={{ x: 0, opacity: 1 }}

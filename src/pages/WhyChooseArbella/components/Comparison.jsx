@@ -29,14 +29,14 @@ const Comparison = () => {
 
         {/* Chart Image */}
         <motion.div
-          className="flex justify-center pl-0 md:pl-20"
+          className="flex justify-center pl-0 md:pl-20 pt-10"
           initial={{ y: 60, opacity: 0, scale: 0.9 }}
           whileInView={{ y: 0, opacity: 1, scale: 1 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 1.0, delay: 0.3, ease: "easeOut" }}
           onViewportEnter={handleInView}
         >
-          <div className="relative w-full h-auto max-w-xs md:w-[751px] md:h-[718px] md:max-w-none">
+          <div className="relative w-full h-auto max-w-xs md:w-[600px] md:h-[574px] md:max-w-none">
             {/* First Image */}
             <img
               src="/assets/images/whyChooseArbella/Spendings.png"

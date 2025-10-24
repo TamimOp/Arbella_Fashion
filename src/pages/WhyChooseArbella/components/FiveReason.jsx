@@ -51,10 +51,10 @@ const FiveReason = () => {
   ];
 
   return (
-    <section className="w-full bg-gray-50 py-12 md:py-16 lg:py-20 font-[Montserrat]">
+    <section className="w-full bg-gray-50 py-12 md:py-16 lg:py-20 font-[Montserrat] overflow-hidden">
       {/* Header */}
       <motion.div
-        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 md:mb-16 lg:mb-20"
+        className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mb-12 md:mb-16 lg:mb-20 overflow-hidden"
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true, amount: 0.3 }}
@@ -74,7 +74,7 @@ const FiveReason = () => {
       </motion.div>
 
       {/* Reasons List */}
-      <div className="space-y-16 md:space-y-20 lg:space-y-24">
+      <div className="space-y-16 md:space-y-20 lg:space-y-24 overflow-hidden">
         {reasons.map((reason, index) => (
           <motion.div
             key={reason.id}
@@ -85,7 +85,7 @@ const FiveReason = () => {
           >
             {reason.imagePosition === "right" ? (
               // Text Left, Image Right
-              <div className="flex flex-col lg:flex-row items-center">
+              <div className="flex flex-col lg:flex-row items-center overflow-hidden">
                 <motion.div
                   className="w-full lg:w-auto lg:flex-1 px-8 md:px-12 lg:pl-20 xl:pl-32 lg:pr-12 xl:pr-16 mb-8 lg:mb-0"
                   initial={{ x: -50, opacity: 0 }}
@@ -163,7 +163,7 @@ const FiveReason = () => {
               </div>
             ) : (
               // Image Left, Text Right
-              <div className="flex flex-col lg:flex-row-reverse items-center lg:justify-between">
+              <div className="flex flex-col lg:flex-row-reverse items-center lg:justify-between overflow-hidden">
                 <motion.div
                   className="w-full lg:w-auto lg:flex-1 lg:max-w-7xl px-8 md:px-12 lg:pl-24 xl:pl-110 mb-8 lg:mb-0"
                   initial={{ x: 50, opacity: 0 }}
