@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 
 const CommunityForEmployee = () => {
   return (
-    <section className="w-full bg-[#EBEBEB] font-[Manrope] pb-10 md:pb-0">
+    <section className="w-full bg-[#EBEBEB] font-[Manrope] pb-10 md:pb-0 overflow-hidden">
       {/* ---------- Heading Section ---------- */}
       <motion.div
-        className="w-full flex justify-center pt-[80px] px-4 md:px-8"
+        className="w-full flex justify-center pt-[80px] px-4 md:px-8 overflow-hidden"
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true, amount: 0.3 }}
@@ -28,7 +28,7 @@ const CommunityForEmployee = () => {
 
       {/* ---------- Main Content Section ---------- */}
       <motion.div
-        className="w-full flex flex-col lg:flex-row justify-between items-stretch mt-[50px] px-4 md:px-0"
+        className="w-full flex flex-col lg:flex-row justify-between items-stretch mt-[50px] px-4 md:px-0 overflow-hidden"
         initial={{ y: 80, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true, amount: 0.1 }}
@@ -36,13 +36,13 @@ const CommunityForEmployee = () => {
       >
         {/* Left Cards */}
         <motion.div
-          className="max-w-[740px] w-full lg:pl-[120px] py-[40px]"
+          className="max-w-[740px] w-full lg:pl-[120px] py-[40px] overflow-hidden"
           initial={{ x: -50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}
           transition={{ duration: 0.6, delay: 0.3, ease: "easeOut" }}
         >
-          <div className="grid grid-cols-1 sm:grid-cols-2 gap-[28px] max-w-[640px]">
+          <div className="grid grid-cols-1 sm:grid-cols-2 gap-[28px] max-w-[640px] overflow-hidden">
             {/* Card 1 */}
             <motion.div
               className="rounded-[30px] bg-[#FFA2731C] px-[20px] md:px-[28px] py-[24px] md:py-[32px] flex flex-col gap-3"

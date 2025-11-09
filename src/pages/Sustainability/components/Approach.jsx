@@ -4,10 +4,10 @@ import { motion } from "framer-motion";
 const Approach = () => {
   return (
     <section
-      className="w-full py-12 md:py-16 lg:py-20 font-[Montserrat]"
+      className="w-full pb-12 md:py-16 lg:py-20 font-[Montserrat] overflow-hidden"
       style={{ backgroundColor: "#F7FDFF" }}
     >
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
         {/* Header */}
         <motion.div
           className="text-center mb-12 md:mb-16 lg:mb-20"
@@ -39,14 +39,14 @@ const Approach = () => {
 
         {/* Materials Section */}
         <motion.div
-          className="mb-16 md:mb-20 lg:mb-24"
+          className="mb-16 md:mb-20 lg:mb-24 overflow-hidden"
           style={{ borderTop: "1px solid #000" }}
           initial={{ y: 80, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
         >
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 overflow-hidden">
             {/* Left - Text */}
             <motion.div
               className="w-full lg:w-1/2 mt-1.5"
@@ -142,14 +142,14 @@ const Approach = () => {
 
         {/* Planting Tree's Section */}
         <motion.div
-          className="mb-16 md:mb-20 lg:mb-24"
+          className="mb-16 md:mb-20 lg:mb-24 overflow-hidden"
           style={{ borderTop: "1px solid #000" }}
           initial={{ y: 80, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
         >
-          <div className="flex flex-col-reverse lg:flex-row gap-8 lg:gap-12">
+          <div className="flex flex-col-reverse lg:flex-row gap-8 lg:gap-12 overflow-hidden">
             {/* Left - Image */}
             <motion.div
               className="w-full lg:w-1/2 flex justify-start"
@@ -233,13 +233,14 @@ const Approach = () => {
 
         {/* Manufacturing Section */}
         <motion.div
+          className="overflow-hidden"
           style={{ borderTop: "1px solid #000" }}
           initial={{ y: 80, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
         >
-          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12">
+          <div className="flex flex-col lg:flex-row gap-8 lg:gap-12 overflow-hidden">
             {/* Left - Text */}
             <motion.div
               className="w-full lg:w-1/2 mt-1.5"

@@ -4,18 +4,11 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <section
-      className="relative flex justify-center items-center h-[579px] lg:h-[768px] bg-cover bg-center"
+      className="relative flex justify-center items-center w-full h-[50vh] sm:h-[60vh] lg:h-[768px] bg-contain sm:bg-cover bg-center bg-no-repeat overflow-hidden"
       style={{
         backgroundImage: "url('/assets/images/sustainability/Banner.jpg')",
       }}
     >
-      <motion.div
-        className="absolute inset-0 bg-black/10"
-        initial={{ opacity: 0 }}
-        animate={{ opacity: 1 }}
-        transition={{ duration: 1.2, ease: "easeOut" }}
-      ></motion.div>
-
       <motion.div
         className="absolute top-1/2 -translate-y-1/2 right-0 flex flex-col justify-center items-center gap-[12px] sm:gap-[15px] lg:gap-[17.59px] w-[48px] sm:w-[55px] lg:w-[62px] h-[150px] sm:h-[175px] lg:h-[202px] bg-white shadow-md rounded-l-md"
         initial={{ x: 100, opacity: 0 }}

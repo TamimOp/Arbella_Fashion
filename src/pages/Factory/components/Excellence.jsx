@@ -93,7 +93,7 @@ const Excellence = () => {
   return (
     <section className="w-full bg-white">
       <motion.div
-        className="py-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8"
+        className="pb-12 md:py-16 lg:py-20 px-4 sm:px-6 lg:px-8"
         initial={{ y: 60, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true, amount: 0.3 }}

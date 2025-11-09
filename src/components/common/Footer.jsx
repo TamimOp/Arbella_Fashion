@@ -313,7 +313,7 @@ const Footer = () => {
       <div className="w-full bg-black overflow-hidden">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-6 overflow-hidden">
           <div className="flex flex-col md:flex-row justify-between items-center gap-4 text-center md:text-left">
-            {/* Copyright */}
+            {/* Left side - Copyright */}
             <motion.p
               className="text-white text-sm"
               initial={{ x: -20, opacity: 0 }}
@@ -324,7 +324,51 @@ const Footer = () => {
               © Arbella 2025 . All right reserved
             </motion.p>
 
-            {/* Social Icons */}
+            {/* Center - Developer Credit */}
+            <motion.div
+              className="flex items-center gap-2"
+              initial={{ y: 20, opacity: 0 }}
+              whileInView={{ y: 0, opacity: 1 }}
+              viewport={{ once: true }}
+              transition={{ duration: 0.6, delay: 0.9 }}
+            >
+              <motion.span
+                className="text-gray-400 text-sm font-[Montserrat]"
+                initial={{ opacity: 0 }}
+                whileInView={{ opacity: 1 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.4, delay: 1.0 }}
+              >
+                Developed by
+              </motion.span>
+              <motion.span
+                className="text-transparent bg-gradient-to-r from-[#FFA273] via-[#FF8A50] to-[#FFA273] bg-clip-text font-bold text-lg tracking-wider"
+                initial={{ scale: 0.8, opacity: 0, rotateX: -90 }}
+                whileInView={{ scale: 1, opacity: 1, rotateX: 0 }}
+                viewport={{ once: true }}
+                transition={{
+                  duration: 0.7,
+                  delay: 1.1,
+                  type: "spring",
+                  stiffness: 150,
+                }}
+                whileHover={{
+                  scale: 1.08,
+                  rotateY: 5,
+                  transition: { duration: 0.3 },
+                }}
+                style={{
+                  fontFamily: "Carattere, cursive",
+                  textShadow:
+                    "0 0 15px rgba(255, 162, 115, 0.4), 0 0 30px rgba(255, 162, 115, 0.2)",
+                  letterSpacing: "0.1em",
+                }}
+              >
+                Tamim Shad Anik
+              </motion.span>
+            </motion.div>
+
+            {/* Right side - Social Icons */}
             <motion.div
               className="flex gap-4 justify-center md:justify-start"
               initial={{ x: 20, opacity: 0 }}

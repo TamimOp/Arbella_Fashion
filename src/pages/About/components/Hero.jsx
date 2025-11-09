@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 
 const Hero = () => {
   return (
-    <section className="relative flex justify-center items-center h-[579px] overflow-hidden">
+    <section className="relative flex justify-center items-center h-[400px] sm:h-[500px] lg:h-[579px] overflow-hidden">
       {/* Animated Background Image */}
       <motion.div
-        className="absolute inset-0 bg-cover bg-center"
+        className="absolute inset-0 bg-contain sm:bg-cover bg-center bg-no-repeat"
         style={{ backgroundImage: "url('/assets/images/about/Banner.jpg')" }}
         initial={{ scale: 1.1, opacity: 0 }}
         animate={{ scale: 1, opacity: 1 }}

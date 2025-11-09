@@ -4,9 +4,9 @@ import { motion } from "framer-motion";
 
 const ContactForm = () => {
   return (
-    <section className="w-full bg-[#F7FDFF] py-[60px] md:py-[120px] flex justify-center px-4">
+    <section className="w-full bg-[#F7FDFF] py-[60px] md:py-[120px] flex justify-center px-4 overflow-hidden">
       <motion.div
-        className="relative max-w-[1400px] w-full flex flex-col lg:flex-row"
+        className="relative max-w-[1400px] w-full flex flex-col lg:flex-row overflow-hidden"
         initial={{ y: 80, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true, amount: 0.2 }}
@@ -14,7 +14,7 @@ const ContactForm = () => {
       >
         {/* Left Form Section */}
         <motion.div
-          className="flex flex-col justify-between bg-[#002C42] text-white px-[40px] md:px-[80px] py-[40px] md:py-[70px] relative z-10 w-full lg:w-[70%] min-h-[600px] lg:h-[832.359px]"
+          className="flex flex-col justify-between bg-[#002C42] text-white px-[40px] md:px-[80px] py-[40px] md:py-[70px] relative z-10 w-full lg:w-[70%] min-h-[600px] lg:h-[832.359px] overflow-hidden"
           style={{
             boxShadow:
               "0px 134.745px 191.127px -76.451px rgba(25, 58, 75, 0.30)",
@@ -183,7 +183,7 @@ const ContactForm = () => {
 
         {/* Right Orange Section */}
         <motion.div
-          className="relative bg-[#FFA273] w-full lg:w-[30%] min-h-[300px] lg:h-[832.359px] flex lg:block items-center justify-center py-8 lg:py-0"
+          className="relative bg-[#FFA273] w-full lg:w-[30%] min-h-[300px] lg:h-[832.359px] flex lg:block items-center justify-center py-8 lg:py-0 overflow-hidden"
           initial={{ x: 50, opacity: 0 }}
           whileInView={{ x: 0, opacity: 1 }}
           viewport={{ once: true }}

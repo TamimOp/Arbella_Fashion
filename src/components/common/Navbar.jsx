@@ -31,9 +31,9 @@ const Navbar = () => {
           boxShadow: "0 4px 16px 0 rgba(31, 38, 135, 0.2)",
           backdropFilter: "blur(20px)",
           border: "1px solid rgba(255, 255, 255, 0.18)",
-          height: "107px",
+          height: "80px",
         }}
-        initial={{ y: -107, opacity: 0 }}
+        initial={{ y: -80, opacity: 0 }}
         animate={{ y: 0, opacity: 1 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
@@ -136,7 +136,7 @@ const Navbar = () => {
           >
             {/* Mobile Menu */}
             <motion.div
-              className="fixed top-[107px] left-0 right-0"
+              className="fixed top-[80px] left-0 right-0"
               style={{
                 background: "rgba(255, 255, 255, 0.25)",
                 backdropFilter: "blur(20px)",

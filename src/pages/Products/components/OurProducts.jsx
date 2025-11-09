@@ -131,13 +131,10 @@ const OurProducts = () => {
             >
               {/* Product Image */}
               <motion.div
-                className="w-full mb-4 overflow-hidden"
+                className="w-full mb-4 overflow-hidden bg-contain md:bg-cover bg-center bg-no-repeat"
                 style={{
                   height: "378px",
                   backgroundImage: `url('${product.image}')`,
-                  backgroundSize: "cover",
-                  backgroundPosition: "center",
-                  backgroundRepeat: "no-repeat",
                 }}
                 whileHover={{
                   scale: 1.05,

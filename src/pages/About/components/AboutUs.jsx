@@ -3,8 +3,8 @@ import { motion } from "framer-motion";
 
 const AboutUs = () => {
   return (
-    <section className="w-full bg-[#F7FDFF] py-12 md:py-16 lg:py-20">
-      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8">
+    <section className="w-full bg-[#F7FDFF] py-12 md:py-16 lg:py-20 overflow-hidden">
+      <div className="max-w-[1400px] mx-auto px-4 sm:px-6 lg:px-8 overflow-hidden">
         {/* Header Section */}
         <motion.div
           className="text-center mb-12 md:mb-16"
@@ -36,7 +36,7 @@ const AboutUs = () => {
 
         {/* Who We Are Section */}
         <motion.div
-          className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-[260px] items-center mb-16 md:mb-20 lg:mb-24"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-[260px] items-center mb-16 md:mb-20 lg:mb-24 overflow-hidden"
           initial={{ y: 80, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.2 }}
@@ -89,7 +89,7 @@ const AboutUs = () => {
 
         {/* Our Philosophy Section */}
         <motion.div
-          className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-[260px] items-center"
+          className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-[260px] items-center overflow-hidden"
           initial={{ y: 80, opacity: 0 }}
           whileInView={{ y: 0, opacity: 1 }}
           viewport={{ once: true, amount: 0.2 }}

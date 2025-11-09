@@ -3,10 +3,10 @@ import { motion } from "framer-motion";
 
 const Facilities = () => {
   return (
-    <section className="w-full bg-white py-12 md:py-16 lg:py-20 font-[Montserrat]">
+    <section className="w-full bg-white py-12 md:py-16 lg:py-20 font-[Montserrat] overflow-hidden">
       {/* Header */}
       <motion.div
-        className="text-center mb-12 md:mb-16 lg:mb-28 px-4"
+        className="text-center mb-12 md:mb-16 lg:mb-28 px-4 overflow-hidden"
         initial={{ y: 50, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true, amount: 0.3 }}
@@ -37,14 +37,14 @@ const Facilities = () => {
 
       {/* Daycare Facility Section */}
       <motion.div
-        className="mb-16 md:mb-20 lg:mb-24"
+        className="mb-16 md:mb-20 lg:mb-24 overflow-hidden"
         initial={{ y: 60, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.8, ease: "easeOut" }}
       >
-        <div className="w-full mx-auto px-4 sm:px-0">
-          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 xl:gap-16">
+        <div className="w-full mx-auto px-4 sm:px-0 overflow-hidden">
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 xl:gap-16 overflow-hidden">
             {/* Left - Text */}
             <motion.div
               className="w-full lg:w-1/2 md:pl-30"
@@ -100,14 +100,14 @@ const Facilities = () => {
 
       {/* Security Section */}
       <motion.div
-        className="mb-16 md:mb-20 lg:mb-24"
+        className="mb-16 md:mb-20 lg:mb-24 overflow-hidden"
         initial={{ y: 60, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.8, delay: 0.1, ease: "easeOut" }}
       >
-        <div className="w-full mx-auto px-4 sm:px-0">
-          <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-12 xl:gap-16">
+        <div className="w-full mx-auto px-4 sm:px-0 overflow-hidden">
+          <div className="flex flex-col lg:flex-row-reverse items-center gap-8 lg:gap-12 xl:gap-16 overflow-hidden">
             {/* Right - Text */}
             <motion.div
               className="w-full lg:w-1/2"
@@ -164,13 +164,14 @@ const Facilities = () => {
 
       {/* Canteen Section */}
       <motion.div
+        className="overflow-hidden"
         initial={{ y: 60, opacity: 0 }}
         whileInView={{ y: 0, opacity: 1 }}
         viewport={{ once: true, amount: 0.2 }}
         transition={{ duration: 0.8, delay: 0.2, ease: "easeOut" }}
       >
-        <div className="w-full mx-auto px-4 sm:px-0">
-          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 xl:gap-16">
+        <div className="w-full mx-auto px-4 sm:px-0 overflow-hidden">
+          <div className="flex flex-col lg:flex-row items-center gap-8 lg:gap-12 xl:gap-16 overflow-hidden">
             {/* Left - Text */}
             <motion.div
               className="w-full lg:w-1/2 md:pl-30"
