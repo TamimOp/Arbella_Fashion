@@ -4,7 +4,7 @@ import { motion } from "framer-motion";
 const Hero = () => {
   return (
     <section
-      className="relative flex justify-center items-center w-full h-[50vh] sm:h-[60vh] lg:h-[768px] bg-contain sm:bg-cover bg-center bg-no-repeat overflow-hidden"
+      className="relative flex justify-center items-center w-full h-[41vh] sm:h-[60vh] lg:h-[768px] bg-contain sm:bg-cover bg-center bg-no-repeat overflow-hidden"
       style={{
         backgroundImage: "url('/assets/images/sustainability/Banner.jpg')",
       }}
